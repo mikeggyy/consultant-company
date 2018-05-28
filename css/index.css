@@ -1,0 +1,1489 @@
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+* {
+    outline: 1px red solid;
+    list-style: none;
+}
+@media (max-width: 991.98px){
+    body{
+        overflow-x:hidden;
+    }
+}
+@media (min-width: 992px){
+    body{
+        overflow:hidden;
+    }
+}
+
+.row {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@media (max-width: 575.98px) {
+    .master-text {
+        font-size: 1.6rem;
+    }
+    .normal-text {
+        font-size: .8rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .master-text {
+        font-size: 1.6rem;
+    }
+    .normal-text {
+        font-size: .8rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .master-text {
+        font-size: 2rem;
+    }
+    .normal-text {
+        font-size: 1.3rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .master-text {
+        font-size: 2rem;
+    }
+    .normal-text {
+        font-size: 1.3rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 1200px) {
+    .master-text {
+        font-size: 2rem;
+    }
+    .normal-text {
+        font-size: 1.3rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+.master-button:hover {
+    background-color: #177B57;
+    transition: 1s;
+}
+
+.normal-button:hover {
+    background-color: #177B57;
+    transition: 1s;
+}
+
+.need-arrow::after {
+    content: "➜";
+    display: inline;
+    position: relative;
+    left: 1em;
+}
+
+
+/* 選單 */
+
+header {
+    width: 70px;
+    position: fixed;
+    z-index: 1000;
+    color: aliceblue;
+    height: 140px;
+}
+
+header .box:nth-child(1) {
+    border-bottom: 1px black solid;
+}
+header .box:nth-child(2) {
+    border-bottom: 1px black solid;
+}
+
+header .box {
+    width: 70px;
+    height: 70px;
+    background-color: #177B57;
+    position: relative;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+header .box:hover {
+    background-color: rgb(18, 92, 65);
+    transition: 1s ease;
+}
+
+header .box img {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+header .menu {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    z-index: 6;
+}
+
+header .menu .line {
+    width: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: aliceblue;
+}
+
+header .menu .topline {
+    position: absolute;
+    top: 0%;
+    -webkit-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotateZ(0deg);
+}
+
+header .menu .centerline {
+    position: absolute;
+    top: 45%;
+}
+
+header .menu .bottomline {
+    position: absolute;
+    top: 90%;
+    -webkit-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotateZ(0deg);
+}
+/* 語言選擇 */
+header .language{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s ease;
+}
+header .language select{
+    position: absolute;
+    left:-300%;
+}
+
+/* 導覽 */
+
+nav {
+    position: fixed;
+    top: 40%;
+    right: 2%;
+    width: auto;
+    z-index: 600;
+}
+
+nav span {
+    display: block;
+    font-size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+nav span:nth-child(1) {
+    color: #177B57;
+}
+
+nav span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: -35%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 3;
+}
+
+@media (max-width: 575.98px) {
+    /* 第一屏 575 */
+    .main-01 {
+        background-image: url("https://picsum.photos/2000/1600/?image=0");
+        height: 50rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-01 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    .main-01 .text-box .master-button {
+        position: absolute;
+    }
+    .main-01 .foot {
+        height: 25rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-01 .foot .foot-01 {
+        border-bottom: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-01 .foot .foot-02 {
+        border-top: 1px transparent solid;
+        cursor: pointer;
+    }
+    /* 第二屏 575 */
+    .main-02 {
+        height: 50rem;
+        position: relative;
+    }
+    .main-02 .first-screen {
+        background-image: url("https://picsum.photos/2000/2000/?image=231");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .main-02 .second-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=130");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .three-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1011");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .four-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1012");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .five-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1013");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .six-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1014");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #333333;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-02 .select-screen {
+        position: relative;
+        top: 1rem;
+        left: 2.2rem;
+    }
+    .main-02 .select-screen li {
+        cursor: pointer;
+        display: block;
+        margin-right: .5rem;
+        font-size: .9rem;
+    }
+    /* 第三屏 575 */
+    .main-03 {
+        background-image: url("https://picsum.photos/2000/1600/?image=320");
+        height: 60rem;
+        position: relative;
+    }
+    .main-03 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-03 .foot {
+        height: 32rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第四屏 575 */
+    .main-04 {
+        background-image: url("https://picsum.photos/2000/2000/?image=85");
+        height: 70rem;
+        position: relative;
+    }
+    .main-04 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-04 .foot {
+        height: 32rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第五屏 575 */
+    .main-05 {
+        background-image: url("https://picsum.photos/2000/1600/?image=369");
+        height: 60rem;
+        position: relative;
+    }
+    .main-05 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-05 .foot {
+        height: 28rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-05 .foot .foot-01 {
+        border-bottom: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-05 .foot .foot-02 {
+        border-top: 1px transparent solid;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* 第一屏 576~767 */
+    .main-01 {
+        background-image: url("https://picsum.photos/2000/1600/?image=0");
+        height: 180vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-01 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .main-01 .text-box .master-button {
+        position: absolute;
+    }
+    .main-01 .foot {
+        height: 20rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-01 .foot .foot-01 {
+        border-bottom: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-01 .foot .foot-02 {
+        border-top: 1px transparent solid;
+        cursor: pointer;
+    }
+    /* 第二屏 576~767 */
+    .main-02 {
+        height: 180vh;
+        position: relative;
+    }
+    .main-02 .first-screen {
+        background-image: url("https://picsum.photos/2000/2000/?image=231");
+        height: 180vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .main-02 .second-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=130");
+        height: 180vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .three-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1011");
+        height: 180vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .four-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1012");
+        height: 180vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .five-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1013");
+        height: 180vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .six-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1014");
+        height: 180vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #333333;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-02 .select-screen {
+        position: relative;
+        top: 1rem;
+        left: 3rem;
+    }
+    .main-02 .select-screen li {
+        cursor: pointer;
+        display: block;
+        margin-right: 1rem;
+        font-size: .9rem;
+    }
+    /* 第三屏 576~767 */
+    .main-03 {
+        background-image: url("https://picsum.photos/2000/1600/?image=320");
+        height: 56rem;
+        position: relative;
+    }
+    .main-03 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-03 .foot {
+        height: 26rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第四屏 576~767 */
+    .main-04 {
+        background-image: url("https://picsum.photos/2000/2000/?image=85");
+        height:56rem;
+        position: relative;
+    }
+    .main-04 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-04 .foot {
+        height: 26rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第五屏 576~767 */
+    .main-05 {
+        background-image: url("https://picsum.photos/2000/1600/?image=369");
+        height: 56rem;
+        position: relative;
+    }
+    .main-05 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-05 .foot {
+        height: 22rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-05 .foot .foot-01 {
+        border-bottom: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-05 .foot .foot-02 {
+        border-top: 1px transparent solid;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* 第一屏 768~991 */
+    .main-01 {
+        background-image: url("https://picsum.photos/2000/1600/?image=0");
+        height: 50rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-01 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .main-01 .text-box .master-button {
+        position: absolute;
+    }
+    .main-01 .foot {
+        height: 20rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-01 .foot .foot-01 {
+        border-bottom: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-01 .foot .foot-02 {
+        border-top: 1px transparent solid;
+        cursor: pointer;
+    }
+    /* 第二屏 768~991 */
+    .main-02 {
+        height: 50rem;
+        position: relative;
+    }
+    .main-02 .first-screen {
+        background-image: url("https://picsum.photos/2000/2000/?image=231");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .main-02 .second-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=130");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .three-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1011");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .four-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1012");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .five-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1013");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .six-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1014");
+        height: 50rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #333333;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-02 .select-screen {
+        position: relative;
+        top: 1rem;
+        left: 3rem;
+    }
+    .main-02 .select-screen li {
+        cursor: pointer;
+        display: block;
+        margin-right: 1rem;
+        font-size: .9rem;
+    }
+    /* 第三屏 768~991 */
+    .main-03 {
+        background-image: url("https://picsum.photos/2000/1600/?image=320");
+        height: 56rem;
+        position: relative;
+    }
+    .main-03 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-03 .foot {
+        height: 26rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第四屏 768~991 */
+    .main-04 {
+        background-image: url("https://picsum.photos/2000/2000/?image=85");
+        height: 56rem;
+        position: relative;
+    }
+    .main-04 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-04 .foot {
+        height: 26rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第五屏 768~991 */
+    .main-05 {
+        background-image: url("https://picsum.photos/2000/1600/?image=369");
+        height: 56rem;
+        position: relative;
+    }
+    .main-05 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .main-05 .foot {
+        height: 26rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-05 .foot .foot-01 {
+        border-bottom: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-05 .foot .foot-02 {
+        border-top: 1px transparent solid;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* 第一屏 992~1199 */
+    .main-01 {
+        background-image: url("https://picsum.photos/2000/1600/?image=0");
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-01 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 10%;
+        margin-right: 50%;
+    }
+    .main-01 .foot {
+        height: 16rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-01 .foot .foot-01 {
+        border-right: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-01 .foot .foot-02 {
+        border-left: 1px transparent solid;
+        cursor: pointer;
+    }
+    /* 第二屏 992~1199 */
+    .main-02 {
+        height: 100vh;
+        position: relative;
+        z-index: 100;
+        top:0px;
+    }
+    .main-02 .first-screen {
+        background-image: url("https://picsum.photos/2000/2000/?image=231");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .main-02 .second-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=130");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .three-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1011");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .four-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1012");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .five-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1013");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .six-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1014");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 30%;
+        margin-left: 10%;
+        margin-right: 50%;
+        background-color: #333333;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-02 .select-screen {
+        position: relative;
+        top: 1rem;
+        left: 3rem;
+    }
+    .main-02 .select-screen li {
+        cursor: pointer;
+        display: block;
+        margin-right: 1rem;
+        font-size: .9rem;
+    }
+    /* 第三屏 992~1199 */
+    .main-03 {
+        background-image: url("https://picsum.photos/2000/1600/?image=320");
+        height: 100vh;
+        position: relative;
+        z-index: 200;
+        top:-100vh;
+    }
+    .main-03 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 15rem;
+    }
+    .main-03 .foot {
+        height: 13rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第四屏 992~1199 */
+    .main-04 {
+        background-image: url("https://picsum.photos/2000/2000/?image=85");
+        height: 100vh;
+        position: relative;
+        z-index: 300;
+        top:-200vh;
+    }
+    .main-04 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 15rem;
+    }
+    .main-04 .foot {
+        height: 13rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第五屏 992~1199 */
+    .main-05 {
+        background-image: url("https://picsum.photos/2000/1600/?image=369");
+        height: 100vh;
+        position: relative;
+        z-index: 400;
+        top:-300vh;
+    }
+    .main-05 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 15rem;
+    }
+    .main-05 .foot {
+        height: 14rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-05 .foot .foot-01 {
+        border-right: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-05 .foot .foot-02 {
+        border-left: 1px transparent solid;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* 第一屏 1200*/
+    .main-01 {
+        background-image: url("https://picsum.photos/2000/1600/?image=0");
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .main-01 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 10%;
+        margin-right: 50%;
+    }
+    .main-01 .foot {
+        height: 10rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-01 .foot .foot-01 {
+        border-right: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-01 .foot .foot-02 {
+        border-left: 1px transparent solid;
+        cursor: pointer;
+    }
+    /* 第二屏 1200*/
+    .main-02 {
+        height: 100vh;
+        position: relative;
+        z-index: 100;
+        top:0px;
+        overflow: hidden;
+    }
+    .main-02 .first-screen {
+        background-image: url("https://picsum.photos/2000/2000/?image=231");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .main-02 .second-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=130");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .three-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1011");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .four-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1012");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .five-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1013");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .six-screen {
+        background-image: url("https://picsum.photos/2000/1600/?image=1014");
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 100%;
+    }
+    .main-02 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 30%;
+        margin-left: 10%;
+        margin-right: 50%;
+        background-color: #333333;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-02 .select-screen {
+        position: relative;
+        top: 1rem;
+        left: 3rem;
+    }
+    .main-02 .select-screen li {
+        cursor: pointer;
+        display: block;
+        margin-right: 1rem;
+        font-size: .9rem;
+    }
+    /* 第三屏 1200 */
+    .main-03 {
+        background-image: url("https://picsum.photos/2000/1600/?image=320");
+        height: 100vh;
+        position: relative;
+        z-index: 200;
+        top:0vh;
+    }
+    .main-03 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 15rem;
+    }
+    .main-03 .foot {
+        height: 13rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第四屏 1200 */
+    .main-04 {
+        background-image: url("https://picsum.photos/2000/2000/?image=85");
+        height: 100vh;
+        position: relative;
+        z-index: 300;
+        top:0vh;
+    }
+    .main-04 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 8rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 15rem;
+    }
+    .main-04 .foot {
+        height: 13rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    /* 第五屏 1200 */
+    .main-05 {
+        background-image: url("https://picsum.photos/2000/1600/?image=369");
+        height: 100vh;
+        position: relative;
+        z-index: 400;
+        top:0vh;
+    }
+    .main-05 .text-box {
+        color: aliceblue;
+        position: absolute;
+        top: 6rem;
+        box-sizing: border-box;
+        margin-left: 2rem;
+        margin-right: 15rem;
+    }
+    .main-05 .foot {
+        height: 13rem;
+        bottom: 0px;
+        position: absolute;
+    }
+    .main-05 .foot .foot-01 {
+        border-right: 1px transparent solid;
+        cursor: pointer;
+    }
+    .main-05 .foot .foot-02 {
+        border-left: 1px transparent solid;
+        cursor: pointer;
+    }
+    
+}
+
+/* 第一屏(全) */
+
+.main-01 .foot .mask {
+    background-color: black;
+    opacity: .6;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.main-01 .foot p {
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 30%;
+    position: relative;
+    top: 2rem;
+    z-index: 3;
+}
+
+.main-01 .foot .foot-01:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+
+
+.main-01 .foot .foot-02:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-01 .foot .foot-01:hover .mask {
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.main-01 .foot .foot-02:hover .mask {
+    transition: 1s ease;
+    opacity: 1;
+}
+
+/* 第二屏(全) */
+.main-02{
+    background-color: #222222;
+}
+.main-02 .first-screen .select-screen li:nth-child(1) {
+    color: #177B57;
+}
+.main-02 .second-screen .select-screen li:nth-child(2) {
+    color: #177B57;
+}
+.main-02 .three-screen .select-screen li:nth-child(3) {
+    color: #177B57;
+}
+.main-02 .four-screen .select-screen li:nth-child(4) {
+    color: #177B57;
+}
+.main-02 .five-screen .select-screen li:nth-child(5) {
+    color: #177B57;
+}
+.main-02 .six-screen .select-screen li:nth-child(6) {
+    color: #177B57;
+}
+.main-02 .screen .select-screen li:hover {
+    color: #177B57;
+    transition: .5s;
+}
+
+
+/* 第三屏(全) */
+
+.main-03 .foot .mask {
+    background-color: black;
+    opacity: .4;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.main-03 .foot p {
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 30%;
+    position: relative;
+    top: 2rem;
+    z-index: 3;
+}
+
+.main-03 .foot .foot-01 {
+    background-image: url("https://picsum.photos/2000/2000/?image=4");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.main-03 .foot .foot-02 {
+    background-image: url("https://picsum.photos/2000/2000/?image=5");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.main-03 .foot .foot-03 {
+    background-image: url("https://picsum.photos/2000/2000/?image=95");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.main-03 .foot .foot-01:hover .mask {
+    transition: 1s ease;
+    opacity: .8;
+}
+
+.main-03 .foot .foot-01:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-03 .foot .foot-02:hover .mask {
+    transition: 1s ease;
+    opacity: .8;
+}
+
+.main-03 .foot .foot-02:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-03 .foot .foot-03:hover .mask {
+    transition: 1s ease;
+    opacity: .8;
+}
+
+.main-03 .foot .foot-03:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+/* 第四屏(全) */
+
+.main-04 .foot .mask {
+    background-color: black;
+    opacity: .4;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.main-04 .foot p {
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 30%;
+    position: relative;
+    top: 2rem;
+    z-index: 3;
+}
+
+.main-04 .foot .foot-01 {
+    background-image: url("https://picsum.photos/2000/2000/?image=8");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.main-04 .foot .foot-02 {
+    background-image: url("https://picsum.photos/2000/2000/?image=10");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.main-04 .foot .foot-03 {
+    background-image: url("https://picsum.photos/2000/2000/?image=20");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.main-04 .foot .foot-01:hover .mask {
+    transition: 1s ease;
+    opacity: .8;
+}
+
+.main-04 .foot .foot-01:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-04 .foot .foot-02:hover .mask {
+    transition: 1s ease;
+    opacity: .8;
+}
+
+.main-04 .foot .foot-02:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-04 .foot .foot-03:hover .mask {
+    transition: 1s ease;
+    opacity: .8;
+}
+
+.main-04 .foot .foot-03:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+/* 第五屏(全) */
+
+.main-05 .mask {
+    background-color: black;
+    opacity: .6;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.main-05 .foot p {
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 30%;
+    position: relative;
+    top: 2rem;
+    z-index: 3;
+}
+
+.main-05 .foot .foot-01:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-05 .foot .foot-02:hover .normal-text::after {
+    color: #177B57;
+    transition: 1s;
+}
+
+.main-05 .foot .foot-01:hover .mask {
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.main-05 .foot .foot-02:hover .mask {
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.main-05 .copyright {
+    position: relative;
+    border-top: 2px transparent solid;
+}
+
+.main-05 .copyright p {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
