@@ -1,7 +1,7 @@
     // 螢幕大小改變後重新load
-    window.addEventListener("resize", function () {
-        window.location.reload();
-    });
+    // window.addEventListener("resize", function () {
+    //     window.location.reload();
+    // });
     // 第一屏
     window.addEventListener("load", function () {
         var nav = document.querySelector("nav");
