@@ -1,0 +1,380 @@
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+* {
+    /* outline: 1px red solid; */
+    list-style: none;
+    font-family: "微軟正黑體";
+}
+body{
+    overflow-x:hidden;
+    width: 100vw;
+}
+.row {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+@media (max-width: 575.98px) {
+    .menu-text{
+        font-size: 1.6rem;
+    }
+    .master-text {
+        font-size: 1.6rem;
+    }
+    .normal-text {
+        font-size: .8rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: .8rem;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .menu-text{
+        font-size: 1.7rem;
+    }
+    .master-text {
+        font-size: 1.6rem;
+    }
+    .normal-text {
+        font-size: .9rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: .9rem;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .menu-text{
+        font-size: 2rem;
+    }
+    .master-text {
+        font-size: 2rem;
+    }
+    .normal-text {
+        font-size: 1.3rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .menu-text{
+        font-size: 2rem;
+    }
+    .master-text {
+        font-size: 2rem;
+    }
+    .normal-text {
+        font-size: 1.3rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu-text{
+        font-size: 2rem;
+    }
+    .master-text {
+        font-size: 2rem;
+    }
+    .normal-text {
+        font-size: 1.1rem;
+    }
+    .normal-button {
+        background-color: #222222;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+    .master-button {
+        background-color: #333333;
+        color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+}
+
+.master-button:hover {
+    background-color: #177B57;
+    transition: 1s;
+}
+
+.normal-button:hover {
+    background-color: #177B57;
+    transition: 1s;
+}
+
+.need-arrow::after {
+    content: "➜";
+    display: inline;
+    position: relative;
+    left: 1em;
+}
+
+
+/* 選單 */
+
+header {
+    width: 70px;
+    position: fixed;
+    z-index: 1000;
+    color: aliceblue;
+    height: 140px;
+}
+
+header .box:nth-child(1) {
+    border-bottom: 1px black solid;
+}
+header .box:nth-child(2) {
+    border-bottom: 1px black solid;
+}
+
+header .box {
+    width: 70px;
+    height: 70px;
+    background-color: #177B57;
+    position: relative;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+header .box:hover {
+    background-color: rgb(18, 92, 65);
+    transition: 1s ease;
+}
+
+header .box img {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+header .menu {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    z-index: 6;
+}
+
+header .menu .line {
+    width: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: aliceblue;
+}
+
+header .menu .topline {
+    position: absolute;
+    top: 0%;
+    -webkit-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotateZ(0deg);
+}
+
+header .menu .centerline {
+    position: absolute;
+    top: 45%;
+}
+
+header .menu .bottomline {
+    position: absolute;
+    top: 90%;
+    -webkit-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotateZ(0deg);
+}
+/* 語言選擇 */
+header .language{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s ease;
+}
+header .language select{
+    position: absolute;
+    left:-300%;
+}
+
+/* 右方導覽列 */
+@media (max-width: 575.98px){
+    nav {
+        position: fixed;
+        top: 3%;
+        right: 1%;
+        width: auto;
+        z-index: 600;
+    }
+}
+
+@media (min-width: 576px){
+    nav {
+        position: fixed;
+        top: 20%;
+        right: 3%;
+        width: auto;
+        z-index: 600;
+    }
+}
+nav span {
+    display: block;
+    font-size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+nav span:nth-child(1) {
+    color: #177B57;
+}
+
+nav span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: -35%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 3;
+}
+.copyright {
+    position: relative;
+    border-top: 2px transparent solid;
+}
+
+.copyright p {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
