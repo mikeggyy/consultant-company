@@ -29,14 +29,33 @@
                 <img src="image/icon/logo.png" alt="">
             </a>
         </div>
-        <div class="box">
+        <div class="box menuBox">
             <div class="menu">
                 <div class="line topline"></div>
                 <div class="line centerline"></div>
                 <div class="line bottomline"></div>
+                <!-- 隱藏選單 -->
+                <div id="hideMenu">
+                    <p>
+                        <a href="aboutUs.html">
+                            About Us
+                        </a>
+                    </p>
+                    <span class="serviceBox">
+                        Our Service
+                        <div class="serviceList">
+                            <a href="service.html#01">Agent Service</a>
+                            <a href="service.html#02">Tax Services</a>
+                            <a href="service.html#03">Real Estate Transaction</a>
+                            <a href="service.html#04">Tourism Consultation Planning</a>
+                            <a href="service.html#05">Investment Planning</a>
+                            <a href="service.html#06">Human Resources</a>
+                        </div>
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="box">
+        <div id="languageBtn" class="box">
             <div class="language-img-box">
                 <img src="image/icon/language.png" alt="">
             </div>
@@ -51,7 +70,6 @@
             </select>
         </div>
     </header>
-
 
     <!-- 導覽 -->
     <nav>
@@ -87,39 +105,44 @@
             </p>
             <div class="offset-1 col-12 col-lg-12 col-xl-6">
                 <span class="master-button">
-                    more...
+                    <a href="aboutUs.html">more...</a>
                 </span>
             </div>
         </div>
+
         <div class="row foot no-gutters col-12">
             <div class="foot-01 col-12 col-lg-6 col-xl-6">
-                <div class="mask"></div>
-                <p class="text-left offset-4">
-                    <em class="">
-                        Service purposes
-                    </em>
-                </p>
-                <p class="text-left offset-4">
-                    <strong class="small need-arrow normal-text">
-                        The company has a good professional ethics and professionalism, with pragmatic, effective, scientific,
-                        objective and rigorous business philosophy, to create tailor-made management and consulting services.
-                    </strong>
-                </p>
+                <a href="aboutUs.html">
+                    <div class="mask"></div>
+                    <p class="text-left offset-4">
+                        <em class="">
+                            Service purposes
+                        </em>
+                    </p>
+                    <p class="text-left offset-4">
+                        <strong class="need-arrow">
+                            The company has a good professional ethics and professionalism, with pragmatic, effective, scientific, objective and rigorous
+                            business philosophy, to create tailor-made management and consulting services.
+                        </strong>
+                    </p>
+                </a>
             </div>
+
             <div class="foot-02 col-12 col-lg-6 col-xl-6">
-                <div class="mask"></div>
-                <p class="text-left offset-4">
-                    <em class="">
-                        About Us
-                    </em>
-                </p>
-                <p class="text-left offset-4">
-                    <strong class="small need-arrow normal-text">
-                        Aquarius was established in 2018. Our professional and technical consultant team is equipped with system
-                        solutions and professional system integration planning advice services to provide customers with
-                        all-round
-                    </strong>
-                </p>
+                <a href="aboutUs.html">
+                    <div class="mask"></div>
+                    <p class="text-left offset-4">
+                        <em class="">
+                            About Us
+                        </em>
+                    </p>
+                    <p class="text-left offset-4">
+                        <strong class="need-arrow">
+                            Aquarius was established in 2018. Our professional and technical consultant team is equipped with system solutions and professional
+                            system integration planning advice services to provide customers with all-round
+                        </strong>
+                    </p>
+                </a>
             </div>
         </div>
     </div>
@@ -139,7 +162,7 @@
                 </p>
                 <div class="offset-1 col-12 col-lg-12 col-xl-6">
                     <span class="normal-button">
-                        more...
+                        <a href="service.html#01">more...</a>
                     </span>
                 </div>
                 <ul class="select-screen row col-12">
@@ -165,7 +188,7 @@
                 </p>
                 <div class="offset-1 col-12 col-lg-12 col-xl-6">
                     <span class="normal-button">
-                        more...
+                        <a href="service.html#02">more...</a>
                     </span>
                 </div>
                 <ul class="select-screen row col-12">
@@ -191,7 +214,7 @@
                 </p>
                 <div class="offset-1 col-12 col-lg-12 col-xl-6">
                     <span class="normal-button">
-                        more...
+                        <a href="service.html#03">more...</a>
                     </span>
                 </div>
                 <ul class="select-screen row col-12">
@@ -217,7 +240,7 @@
                 </p>
                 <div class="offset-1 col-12 col-lg-12 col-xl-6">
                     <span class="normal-button">
-                        more...
+                        <a href="service.html#04">more...</a>
                     </span>
                 </div>
                 <ul class="select-screen row col-12">
@@ -243,7 +266,7 @@
                 </p>
                 <div class="offset-1 col-12 col-lg-12 col-xl-6">
                     <span class="normal-button">
-                        more...
+                        <a href="service.html#05">more...</a>
                     </span>
                 </div>
                 <ul class="select-screen row col-12">
@@ -269,7 +292,7 @@
                 </p>
                 <div class="offset-1 col-12 col-lg-12 col-xl-6">
                     <span class="normal-button">
-                        more...
+                        <a href="service.html#06">more...</a>
                     </span>
                 </div>
                 <ul class="select-screen row col-12">
@@ -288,19 +311,19 @@
     <div id="main-03" class="main-03 container-fuild">
         <div class="text-box text-left row">
             <p class="offset-1 col-12">
-                <em class="normal-text">
+                <em class="menu-text">
                     Success
                 </em>
             </p>
             <p class="offset-1 col-12">
-                <strong class="master-text">
+                <strong class="normal-text">
                     Aquarius Consultant Demands
                 </strong>
             </p>
             <div class="offset-1 col-6">
-                <span class="master-button">
+                <!-- <span class="master-button">
                     more...
-                </span>
+                </span> -->
             </div>
         </div>
         <div class="row foot no-gutters col-12">
@@ -311,7 +334,7 @@
                         Client
                     </em>
                 </p>
-                <p class="text-left offset-4">
+                <p class="text-center offset-4">
                     <strong class="menu-text"></strong>
                 </p>
             </div>
@@ -322,7 +345,7 @@
                         Case
                     </em>
                 </p>
-                <p class="text-left offset-4">
+                <p class="text-center offset-4">
                     <strong class="menu-text"></strong>
                 </p>
             </div>
@@ -333,7 +356,7 @@
                         Service hours
                     </em>
                 </p>
-                <p class="text-left offset-4">
+                <p class="text-center offset-4">
                     <strong class="menu-text"></strong>
                 </p>
             </div>
@@ -344,8 +367,8 @@
     <div id="main-04" class="main-04 container-fuild">
         <div class="text-box row">
             <p class="offset-1 col-12">
-                <em class="normal-text">
-                    The Best Team
+                <em class="menu-text">
+                    Why Choose Us
                 </em>
             </p>
             <p class="offset-1 col-12">
@@ -354,9 +377,9 @@
                 </strong>
             </p>
             <div class="offset-1 col-6">
-                <span class="master-button">
+                <!-- <span class="master-button">
                     more...
-                </span>
+                </span> -->
             </div>
         </div>
         <div class="row foot no-gutters col-12 ">
@@ -368,8 +391,8 @@
                     </em>
                 </p>
                 <p class="text-left offset-4">
-                    <strong class="need-arrow normal-text">
-                        The team created extraordinary.
+                    <strong class="small">
+                        We have an international team spanning five different countries (including customer service, marketing, engineers)
                     </strong>
                 </p>
             </div>
@@ -381,7 +404,7 @@
                     </em>
                 </p>
                 <p class="text-left offset-4">
-                    <strong class="need-arrow normal-text">Aquarius' lawyer team has considerable experience in civil, criminal, and administrative litigation.
+                    <strong class="small">Aquarius' lawyer team has considerable experience in civil, criminal, and administrative litigation.
                         The contract lawyers strictly control the quality of the process or results of handling the business.</strong>
                 </p>
             </div>
@@ -393,7 +416,7 @@
                     </em>
                 </p>
                 <p class="text-left offset-4">
-                    <strong class="need-arrow normal-text">The Aquarius finance team helps us make informed business decisions by preparing and analyzing accurate
+                    <strong class="small">The Aquarius finance team helps us make informed business decisions by preparing and analyzing accurate
                         and compliant financial information.</strong>
                 </p>
             </div>
@@ -405,7 +428,7 @@
     <div id="main-05" class="main-05 container-fuild">
         <div class="text-box row">
             <p class="offset-1 col-12">
-                <em class="normal-text text-dark">
+                <em class="menu-text text-dark">
                     Contact Aquarius
                 </em>
             </p>
@@ -416,9 +439,9 @@
                 </strong>
             </p>
             <div class="offset-1 col-12 col-lg-8 col-xl-8">
-                <span class="master-button">
+                <!-- <span class="master-button">
                     more...
-                </span>
+                </span> -->
             </div>
         </div>
         <div class="row foot no-gutters col-12">

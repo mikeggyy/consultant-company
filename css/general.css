@@ -17,10 +17,20 @@
     list-style: none;
     font-family: "微軟正黑體";
 }
+a:hover{
+    text-decoration: none;
+    color: #222222;
+    transition: .5s;
+}
+a{
+    color: aliceblue;
+    transition: .5s;
+}
 body{
     overflow-x:hidden;
     width: 100vw;
 }
+
 .row {
     padding-right: 0px;
     padding-left: 0px;
@@ -154,7 +164,7 @@ body{
         font-weight: 500;
         cursor: pointer;
         transition: 1s;
-        font-size: 1.3rem;
+        font-size: .9rem;
     }
     .master-button {
         background-color: #333333;
@@ -166,7 +176,7 @@ body{
         font-weight: 500;
         cursor: pointer;
         transition: 1s;
-        font-size: 1.3rem;
+        font-size: .9rem;
     }
 }
 
@@ -178,7 +188,7 @@ body{
         font-size: 2rem;
     }
     .normal-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .normal-button {
         background-color: #222222;
@@ -190,7 +200,7 @@ body{
         font-weight: 500;
         cursor: pointer;
         transition: 1s;
-        font-size: 1.3rem;
+        font-size: .9rem;
     }
     .master-button {
         background-color: #333333;
@@ -202,7 +212,7 @@ body{
         font-weight: 500;
         cursor: pointer;
         transition: 1s;
-        font-size: 1.3rem;
+        font-size: .9rem;
     }
 }
 
@@ -223,13 +233,12 @@ body{
     left: 1em;
 }
 
-
 /* 選單 */
 
 header {
     width: 70px;
     position: fixed;
-    z-index: 1000;
+    z-index: 500;
     color: aliceblue;
     height: 140px;
 }
@@ -247,12 +256,13 @@ header .box {
     background-color: #177B57;
     position: relative;
     cursor: pointer;
-    transition: 1s ease;
+    transition: .5s ease;
+    z-index: 9999;
 }
 
 header .box:hover {
     background-color: rgb(18, 92, 65);
-    transition: 1s ease;
+    transition: .5s ease;
 }
 
 header .box img {
@@ -279,7 +289,10 @@ header .menu {
     transition: 1s;
     z-index: 6;
 }
-
+header .menuBox:hover #hideMenu{
+    left:50px;
+    opacity: 1;
+}
 header .menu .line {
     width: 30px;
     padding-top: 1px;
@@ -306,6 +319,79 @@ header .menu .bottomline {
     -webkit-transform: rotateZ(0deg);
     -ms-transform: rotate(0deg);
     transform: rotateZ(0deg);
+}
+
+/* 隱藏選單 */
+#hideMenu{
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 900;
+    position: absolute;
+    top:-25px;
+    left:-200px;
+    background-color: #177B57;
+    transition: .5s;
+    opacity: 0;
+    border: 1px solid black;
+}
+
+#hideMenu p{
+    flex-basis: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#hideMenu p:hover{
+    background-color: rgb(18, 92, 65);
+}
+
+#hideMenu p:hover a{
+    color:black;
+}
+
+#hideMenu .serviceBox{
+    flex-basis: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    transition: 1s;
+    position: relative;
+}
+
+#hideMenu .serviceBox:hover{
+    background-color: rgb(18, 92, 65);
+    color:black;
+    transition: 1s;
+}
+
+#hideMenu .serviceBox:hover .serviceList{
+    opacity: 1;
+    transition: .5s;
+    left:0px;
+}
+
+#hideMenu .serviceBox .serviceList{
+    width: 250px;
+    position: absolute;
+    top:0;
+    left:-200px;
+    background-color: #177B57;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    /* border: 1px solid black; */
+}
+
+#hideMenu .serviceBox .serviceList a{
+    flex-basis: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#hideMenu .serviceBox .serviceList a:hover{
+    background-color: rgb(18, 92, 65);
 }
 /* 語言選擇 */
 header .language{
@@ -365,6 +451,7 @@ nav span::before {
     background-color: aliceblue;
     z-index: 3;
 }
+
 .copyright {
     position: relative;
     border-top: 2px transparent solid;

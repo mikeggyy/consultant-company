@@ -9,11 +9,96 @@ resizeLoad = function () {
     });
 }
 
+// 偵測高度
+detectHeight_01 = function () {
+    window.addEventListener("scroll", function () {
+        var a = $("#detect-01").offset().top;
+        var b = document.scrollingElement.scrollTop;
+        var c = a - 500;
+        document.querySelectorAll(".textbox")[0].querySelectorAll("h3")[0].style.transition = "1s";
+        document.querySelectorAll(".textbox")[0].querySelectorAll("p")[0].style.transition = "1s";
+        // console.log(a);
+        // console.log(b);
+        if (c <= b) {
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[0].querySelectorAll("h3")[0].style.opacity = "1";
+            }, 150);
+
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[0].querySelectorAll("p")[0].style.opacity = "1";
+            }, 300);
+        }
+    }, false);
+}
+
+detectHeight_02 = function () {
+    window.addEventListener("scroll", function () {
+        var a = $("#detect-02").offset().top;
+        var b = document.scrollingElement.scrollTop;
+        var c = a - 500;
+        document.querySelectorAll(".textbox")[1].querySelectorAll("h3")[0].style.transition = "1s";
+        document.querySelectorAll(".textbox")[1].querySelectorAll("p")[0].style.transition = "1s";
+        // console.log(a);
+        // console.log(b);
+        if (c <= b) {
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[1].querySelectorAll("h3")[0].style.opacity = "1";
+            }, 150);
+
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[1].querySelectorAll("p")[0].style.opacity = "1";
+            }, 300);
+        }
+    }, false);
+}
+
+detectHeight_03 = function () {
+    window.addEventListener("scroll", function () {
+        var a = $("#detect-03").offset().top;
+        var b = document.scrollingElement.scrollTop;
+        var c = a - 500;
+        document.querySelectorAll(".textbox")[2].querySelectorAll("h3")[0].style.transition = "1s";
+        document.querySelectorAll(".textbox")[2].querySelectorAll("ul")[0].style.transition = "1s";
+        // console.log(a);
+        // console.log(b);
+        if (c <= b) {
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[2].querySelectorAll("h3")[0].style.opacity = "1";
+            }, 150);
+
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[2].querySelectorAll("ul")[0].style.opacity = "1";
+            }, 300);
+        }
+    }, false);
+}
+
+detectHeight_04 = function () {
+    window.addEventListener("scroll", function () {
+        var a = $("#detect-04").offset().top;
+        var b = document.scrollingElement.scrollTop;
+        var c = a - 500;
+        document.querySelectorAll(".textbox")[3].querySelectorAll("h3")[0].style.transition = "1s";
+        document.querySelectorAll(".textbox")[3].querySelectorAll("ul")[0].style.transition = "1s";
+        // console.log(a);
+        // console.log(b);
+        if (c <= b) {
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[3].querySelectorAll("h3")[0].style.opacity = "1";
+            }, 150);
+
+            setTimeout(function () {
+                document.querySelectorAll(".textbox")[3].querySelectorAll("ul")[0].style.opacity = "1";
+            }, 300);
+        }
+    }, false);
+}
+
 // head功能
 headFeatures = function () {
     var select = document.querySelector(".language").querySelector("select");
     // 語言彈出視窗
-    document.querySelector(".language-img-box").addEventListener("click", function () {
+    document.querySelector("#languageBtn").addEventListener("click", function () {
         if (select.style.left == "-300%") {
             select.style.transition = ".5s ease";
             select.style.left = "0px";
@@ -294,3 +379,525 @@ htmlScreenToZone5 = function () {
     }, 250);
     return false;
 }
+
+// service 切換可見訊息
+
+iconClick = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.transition = "1s";
+    main_02.style.transition = "1s";
+    main_03.style.transition = "1s";
+    main_04.style.transition = "1s";
+    main_05.style.transition = "1s";
+    main_06.style.transition = "1s";
+    iconBox.querySelectorAll(".img")[0].addEventListener("click", function () {
+        main_01.style.opacity = 1;
+        main_02.style.opacity = 0;
+        main_03.style.opacity = 0;
+        main_04.style.opacity = 0;
+        main_05.style.opacity = 0;
+        main_06.style.opacity = 0;
+        document.scrollingElement.scrollTop = 0;
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    });
+    iconBox.querySelectorAll(".img")[1].addEventListener("click", function () {
+        main_01.style.opacity = 0;
+        main_02.style.opacity = 1;
+        main_03.style.opacity = 0;
+        main_04.style.opacity = 0;
+        main_05.style.opacity = 0;
+        main_06.style.opacity = 0;
+        document.scrollingElement.scrollTop = 0;
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    });
+    iconBox.querySelectorAll(".img")[2].addEventListener("click", function () {
+        main_01.style.opacity = 0;
+        main_02.style.opacity = 0;
+        main_03.style.opacity = 1;
+        main_04.style.opacity = 0;
+        main_05.style.opacity = 0;
+        main_06.style.opacity = 0;
+        document.scrollingElement.scrollTop = 0;
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    });
+    iconBox.querySelectorAll(".img")[3].addEventListener("click", function () {
+        main_01.style.opacity = 0;
+        main_02.style.opacity = 0;
+        main_03.style.opacity = 0;
+        main_04.style.opacity = 1;
+        main_05.style.opacity = 0;
+        main_06.style.opacity = 0;
+        document.scrollingElement.scrollTop = 0;
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    });
+    iconBox.querySelectorAll(".img")[4].addEventListener("click", function () {
+        main_01.style.opacity = 0;
+        main_02.style.opacity = 0;
+        main_03.style.opacity = 0;
+        main_04.style.opacity = 0;
+        main_05.style.opacity = 1;
+        main_06.style.opacity = 0;
+        document.scrollingElement.scrollTop = 0;
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    });
+    iconBox.querySelectorAll(".img")[5].addEventListener("click", function () {
+        main_01.style.opacity = 0;
+        main_02.style.opacity = 0;
+        main_03.style.opacity = 0;
+        main_04.style.opacity = 0;
+        main_05.style.opacity = 0;
+        main_06.style.opacity = 1;
+        document.scrollingElement.scrollTop = 0;
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    });
+}
+
+// 點首頁連結一進到Service的畫面
+urlLinkToService_1 = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.opacity = 1;
+    main_02.style.opacity = 0;
+    main_03.style.opacity = 0;
+    main_04.style.opacity = 0;
+    main_05.style.opacity = 0;
+    main_06.style.opacity = 0;
+    document.scrollingElement.scrollTop = 0;
+    if (main_01.style.opacity == 1) {
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_02.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_03.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_04.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_05.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_06.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    }
+}
+
+urlLinkToService_2 = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.opacity = 0;
+    main_02.style.opacity = 1;
+    main_03.style.opacity = 0;
+    main_04.style.opacity = 0;
+    main_05.style.opacity = 0;
+    main_06.style.opacity = 0;
+    document.scrollingElement.scrollTop = 0;
+    if (main_01.style.opacity == 1) {
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_02.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_03.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_04.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_05.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_06.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    }
+}
+
+urlLinkToService_3 = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.opacity = 0;
+    main_02.style.opacity = 0;
+    main_03.style.opacity = 1;
+    main_04.style.opacity = 0;
+    main_05.style.opacity = 0;
+    main_06.style.opacity = 0;
+    document.scrollingElement.scrollTop = 0;
+    if (main_01.style.opacity == 1) {
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_02.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_03.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_04.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_05.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_06.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    }
+}
+
+urlLinkToService_4 = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.opacity = 0;
+    main_02.style.opacity = 0;
+    main_03.style.opacity = 0;
+    main_04.style.opacity = 1;
+    main_05.style.opacity = 0;
+    main_06.style.opacity = 0;
+    document.scrollingElement.scrollTop = 0;
+    if (main_01.style.opacity == 1) {
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_02.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_03.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_04.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_05.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_06.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    }
+}
+
+urlLinkToService_5 = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.opacity = 0;
+    main_02.style.opacity = 0;
+    main_03.style.opacity = 0;
+    main_04.style.opacity = 0;
+    main_05.style.opacity = 1;
+    main_06.style.opacity = 0;
+    document.scrollingElement.scrollTop = 0;
+    if (main_01.style.opacity == 1) {
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_02.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_03.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_04.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_05.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_06.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    }
+}
+
+urlLinkToService_6 = function () {
+    var iconBox = document.querySelector(".iconBox");
+    var main_01 = document.querySelector(".main-01");
+    var main_02 = document.querySelector(".main-02");
+    var main_03 = document.querySelector(".main-03");
+    var main_04 = document.querySelector(".main-04");
+    var main_05 = document.querySelector(".main-05");
+    var main_06 = document.querySelector(".main-06");
+    main_01.style.opacity = 0;
+    main_02.style.opacity = 0;
+    main_03.style.opacity = 0;
+    main_04.style.opacity = 0;
+    main_05.style.opacity = 0;
+    main_06.style.opacity = 1;
+    document.scrollingElement.scrollTop = 0;
+    if (main_01.style.opacity == 1) {
+        iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_02.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_03.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_04.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_05.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+        iconBox.querySelectorAll(".img")[5].style.animation = "";
+    }else if(main_06.style.opacity == 1){
+        iconBox.querySelectorAll(".img")[0].style.animation = "";
+        iconBox.querySelectorAll(".img")[1].style.animation = "";
+        iconBox.querySelectorAll(".img")[2].style.animation = "";
+        iconBox.querySelectorAll(".img")[3].style.animation = "";
+        iconBox.querySelectorAll(".img")[4].style.animation = "";
+        iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+    }
+}
+
+// serviceIconAnimation = function () {
+//     var iconBox = document.querySelector(".iconBox");
+//     var main_01 = document.querySelector(".main-01");
+//     var main_02 = document.querySelector(".main-02");
+//     var main_03 = document.querySelector(".main-03");
+//     var main_04 = document.querySelector(".main-04");
+//     var main_05 = document.querySelector(".main-05");
+//     var main_06 = document.querySelector(".main-06");
+//     if (main_01.style.opacity = 1) {
+//         iconBox.querySelectorAll(".img")[0].style.animation = "iconFocus 2s infinite";
+//         iconBox.querySelectorAll(".img")[1].style.animation = "";
+//         iconBox.querySelectorAll(".img")[2].style.animation = "";
+//         iconBox.querySelectorAll(".img")[3].style.animation = "";
+//         iconBox.querySelectorAll(".img")[4].style.animation = "";
+//         iconBox.querySelectorAll(".img")[5].style.animation = "";
+//     }else if(main_02.style.opacity = 1){
+//         iconBox.querySelectorAll(".img")[0].style.animation = "";
+//         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
+//         iconBox.querySelectorAll(".img")[2].style.animation = "";
+//         iconBox.querySelectorAll(".img")[3].style.animation = "";
+//         iconBox.querySelectorAll(".img")[4].style.animation = "";
+//         iconBox.querySelectorAll(".img")[5].style.animation = "";
+//     }else if(main_03.style.opacity = 1){
+//         iconBox.querySelectorAll(".img")[0].style.animation = "";
+//         iconBox.querySelectorAll(".img")[1].style.animation = "";
+//         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
+//         iconBox.querySelectorAll(".img")[3].style.animation = "";
+//         iconBox.querySelectorAll(".img")[4].style.animation = "";
+//         iconBox.querySelectorAll(".img")[5].style.animation = "";
+//     }else if(main_04.style.opacity = 1){
+//         iconBox.querySelectorAll(".img")[0].style.animation = "";
+//         iconBox.querySelectorAll(".img")[1].style.animation = "";
+//         iconBox.querySelectorAll(".img")[2].style.animation = "";
+//         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
+//         iconBox.querySelectorAll(".img")[4].style.animation = "";
+//         iconBox.querySelectorAll(".img")[5].style.animation = "";
+//     }else if(main_05.style.opacity = 1){
+//         iconBox.querySelectorAll(".img")[0].style.animation = "";
+//         iconBox.querySelectorAll(".img")[1].style.animation = "";
+//         iconBox.querySelectorAll(".img")[2].style.animation = "";
+//         iconBox.querySelectorAll(".img")[3].style.animation = "";
+//         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
+//         iconBox.querySelectorAll(".img")[5].style.animation = "";
+//     }else if(main_06.style.opacity = 1){
+//         iconBox.querySelectorAll(".img")[0].style.animation = "";
+//         iconBox.querySelectorAll(".img")[1].style.animation = "";
+//         iconBox.querySelectorAll(".img")[2].style.animation = "";
+//         iconBox.querySelectorAll(".img")[3].style.animation = "";
+//         iconBox.querySelectorAll(".img")[4].style.animation = "";
+//         iconBox.querySelectorAll(".img")[5].style.animation = "iconFocus 2s infinite";
+//     }
+// }

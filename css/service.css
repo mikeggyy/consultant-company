@@ -1,0 +1,482 @@
+@media (max-width: 575.98px) {
+    .mainbox {
+        width: 100%;
+        position: relative;
+    }
+    .mainbox .mainContent {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainbox .mainContent .textbox {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .mainbox .mainContent .textbox h1 {
+        flex-basis: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .mainbox .mainContent .textbox h3 {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h4 {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox p {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .imgbox {
+        flex-basis: 100%;
+        height: auto;
+    }
+    .mainbox .mainContent .imgbox img {
+        width: 100%;
+    }
+    .mainbox .main-01 {
+        position: relative;
+    }
+    .mainbox .main-02 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-03 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-04 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-05 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-06 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .iconBox {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        border-top: 1px gray solid;
+        background-color: #FFFFFF;
+    }
+    .iconBox .icon {
+        flex-basis: 50%;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .mainbox {
+        width: 100%;
+        position: relative;
+    }
+    .mainbox .mainContent {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainbox .mainContent .textbox {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .mainbox .mainContent .textbox h1 {
+        flex-basis: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h3 {
+        flex-basis: 100%;
+        padding-left: 15%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h4 {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox p {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .imgbox {
+        flex-basis: 100%;
+        height: auto;
+    }
+    .mainbox .mainContent .imgbox img {
+        width: 100%;
+    }
+    .mainbox .main-01 {
+        position: relative;
+    }
+    .mainbox .main-02 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-03 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-04 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-05 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-06 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .iconBox {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        border-top: 1px gray solid;
+        background-color: #FFFFFF;
+    }
+    .iconBox .icon {
+        flex-basis: 33.333%;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .mainbox {
+        width: 100%;
+        position: relative;
+    }
+    .mainbox .mainContent {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainbox .mainContent .textbox {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .mainbox .mainContent .textbox h1 {
+        flex-basis: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h3 {
+        flex-basis: 100%;
+        padding-left: 15%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h4 {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox p {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .imgbox {
+        flex-basis: 100%;
+        height: auto;
+    }
+    .mainbox .mainContent .imgbox img {
+        width: 100%;
+    }
+    .mainbox .main-01 {
+        position: relative;
+    }
+    .mainbox .main-02 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-03 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-04 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-05 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-06 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .iconBox {
+        display: flex;
+        padding-top: 50px;
+        border-top: 1px gray solid;
+        background-color: #FFFFFF;
+    }
+    .iconBox .icon {
+        flex-basis: 20%;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .mainbox {
+        width: 100%;
+        position: relative;
+    }
+    .mainbox .mainContent {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainbox .mainContent .textbox {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .mainbox .mainContent .textbox h1 {
+        flex-basis: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h3 {
+        flex-basis: 100%;
+        padding-left: 15%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h4 {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox p {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .imgbox {
+        flex-basis: 100%;
+        height: auto;
+    }
+    .mainbox .mainContent .imgbox img {
+        width: 100%;
+    }
+    .mainbox .main-01 {
+        position: relative;
+    }
+    .mainbox .main-02 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-03 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-04 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-05 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-06 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .iconBox {
+        display: flex;
+        padding-top: 50px;
+        border-top: 1px gray solid;
+        background-color: #FFFFFF;
+    }
+    .iconBox .icon {
+        flex-basis: 20%;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainbox {
+        width: 100%;
+        position: relative;
+    }
+    .mainbox .mainContent {
+        width: 100%;
+        display: flex;
+    }
+    .mainbox .mainContent .textbox {
+        display: flex;
+        flex-basis: 50%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .mainbox .mainContent .textbox h1 {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h3 {
+        flex-basis: 100%;
+        padding-left: 25%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox h4 {
+        flex-basis: 100%;
+        padding-left: 30%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .textbox p {
+        flex-basis: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        margin-top: 20px;
+    }
+    .mainbox .mainContent .imgbox {
+        flex-basis: 50%;
+        height: auto;
+    }
+    .mainbox .mainContent .imgbox img {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .mainbox .main-01 {
+        position: relative;
+    }
+    .mainbox .main-02 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-03 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-04 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-05 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .mainbox .main-06 {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    .iconBox {
+        display: flex;
+        padding-top: 50px;
+        border-top: 1px gray solid;
+        background-color: #FFFFFF;
+    }
+    .iconBox .icon {
+        flex-basis: 33.333333%;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .iconBox .icon img:hover {
+        top: -20px;
+        transition: .5s;
+    }
+}
+
+/* 全尺寸設定 */
+
+.iconBox .icon {
+    position: relative;
+}
+
+.iconBox .icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: .5s;
+}
+
+.iconBox .icon img:hover {
+    top: -20px;
+    transition: .5s;
+}
+
+.mainbox {
+    background-image: url("../image/background/01.png");
+}
+
+.copyright {
+    margin-top: 50px;
+    background-color: #fff;
+}

@@ -21,3 +21,9 @@
       border-bottom:5px dashed #387eff;
     }
   }
+
+  @keyframes iconFocus{
+    0%{opacity: 1; top:0px}
+    50%{opacity: .5; top:-20px;}
+    100%{opacity: 1; top:0px;}
+  }

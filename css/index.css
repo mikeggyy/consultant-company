@@ -526,11 +526,11 @@
         position: absolute;
         top: 4rem;
         box-sizing: border-box;
-        margin-left: 10%;
-        margin-right: 50%;
+        margin-left: 8%;
+        margin-right: 20%;
     }
     .main-01 .foot {
-        height: 20rem;
+        height: 14rem;
         bottom: 0px;
         position: absolute;
     }
@@ -575,11 +575,11 @@
     .main-02 .text-box {
         color: aliceblue;
         position: absolute;
-        top: 30%;
+        top: 20%;
         margin-left: 10%;
-        margin-right: 50%;
+        margin-right: 40%;
         background-color: #333333;
-        padding-right: 50px;
+        padding-right: 8.3333%;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -603,10 +603,10 @@
     .main-03 .text-box {
         color: aliceblue;
         position: absolute;
-        top: 8rem;
+        top: 4rem;
         box-sizing: border-box;
-        margin-left: 2rem;
-        margin-right: 15rem;
+        margin-left: 8%;
+        margin-right: 20%;
     }
     .main-03 .foot {
         height: 13rem;
@@ -622,13 +622,13 @@
     .main-04 .text-box {
         color: aliceblue;
         position: absolute;
-        top: 8rem;
+        top: 4rem;
         box-sizing: border-box;
-        margin-left: 2rem;
-        margin-right: 15rem;
+        margin-left: 8%;
+        margin-right: 20%;
     }
     .main-04 .foot {
-        height: 27rem;
+        height: 16rem;
         bottom: 0px;
         position: absolute;
     }
@@ -650,13 +650,13 @@
     .main-05 .text-box {
         color: aliceblue;
         position: absolute;
-        top: 6rem;
+        top: 4rem;
         box-sizing: border-box;
-        margin-left: 2rem;
-        margin-right: 15rem;
+        margin-left: 8%;
+        margin-right: 20%;
     }
     .main-05 .foot {
-        height: 14rem;
+        height: 16rem;
         bottom: 0px;
         position: absolute;
     }
@@ -755,7 +755,7 @@
         margin-left: 10%;
         margin-right: 50%;
         background-color: #333333;
-        padding-right: 50px;
+        padding-right: 8.3333%;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -826,10 +826,15 @@
         height: 12rem;
         bottom: 0px;
         position: absolute;
+        transition: 1s;
     }
     .main-05 .foot .foot-01 {
         border-right: 1px transparent solid;
         cursor: pointer;
+    }
+    .main-05 .foot:hover{
+        height: 20rem;
+        transition: 1s;
     }
     .main-05 .foot .foot-02 {
         border-left: 1px transparent solid;

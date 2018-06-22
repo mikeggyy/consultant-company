@@ -1,19 +1,20 @@
-@media (max-width: 575.98px) {}
-
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
+body{
+    background-image: url("../image/background/01.png");
+    background-repeat: repeat;
+}
+@media (max-width: 575.98px) {
     .first-screen {
         width: 100%;
-        height: 80vh;
+        /* height: 80vh; */
         background-image: url("../image/aboutUs/banner.png");
-        background-size: 170%;
+        background-size: 250%;
         background-position: center;
     }
     .first-screen .box {
         width: 100%;
-        height: 80vh;
+        /* height: 80vh; */
         background-color: rgba(0, 0, 0, 0.4);
+        padding-bottom: 10%;
     }
     .first-screen h1,
     h2 {
@@ -24,11 +25,13 @@
         font-weight: 300;
     }
     .first-screen h1 {
-        font-size: 3.2em;
-        padding-top: 10%;
+        font-size: 2.2em;
+        padding-top: 20%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     .first-screen h2 {
-        font-size: 2em;
+        font-size: 1.2em;
         padding-left: 20%;
         padding-right: 20%;
         opacity: .7;
@@ -54,13 +57,13 @@
         overflow: hidden;
     }
     .second-screen .imgbox {
-        flex-basis: 40%;
+        flex-basis: 100%;
     }
     .second-screen .imgbox img {
-        width: 200%;
+        width: 100%;
     }
     .second-screen .textbox {
-        flex-basis: 60%;
+        flex-basis: 100%;
         background-color: #F2F2F2;
         border-bottom: 1px rgba(109, 110, 113, 0.247) solid;
     }
@@ -90,10 +93,10 @@
         order: 2;
     }
     .second-screen .no-3 {
-        order: 4;
+        order: 3;
     }
     .second-screen .no-4 {
-        order: 3;
+        order: 4;
     }
     .second-screen .no-5 {
         order: 5;
@@ -102,23 +105,289 @@
         order: 6;
     }
     .second-screen .no-7 {
-        order: 8;
+        order: 7;
     }
     .second-screen .no-8 {
-        order: 7;
+        order: 8;
     }
     .third-screen {
         width: 100%;
         display: flex;
         background-position: center;
         background-image: url("../image/aboutUs/test-06.png");
-        height: 60vh;
+        background-size: 280%;
     }
     .third-screen .textbox {
-        flex-basis: 50%;
+        flex-basis: 90%;
         margin-top: 5vh;
         margin-bottom: 5vh;
         margin-left: 5%;
+        margin-right: 5%;
+        background-color: rgba(000, 000, 000, .4);
+        color: aliceblue;
+    }
+    .third-screen .textbox h3 {
+        font-size: 1.6em;
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .third-screen .textbox p {
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .first-screen {
+        width: 100%;
+        background-image: url("../image/aboutUs/banner.png");
+        background-size: 170%;
+        background-position: center;
+    }
+    .first-screen .box {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-bottom: 10%;
+    }
+    .first-screen h1,
+    h2 {
+        font-family: 'Quicksand';
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+    }
+    .first-screen h1 {
+        font-size: 2.2em;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .first-screen h2 {
+        font-size: 1.2em;
+        padding-left: 20%;
+        padding-right: 20%;
+        opacity: .7;
+        color: aliceblue;
+        text-align: left;
+    }
+    .first-screen .box {
+        text-align: center;
+    }
+    .first-screen .loader {
+        animation: spinningColor 3s ease-in-out infinite;
+        margin: 50px auto;
+        border: 5px double #f0eff5;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .second-screen {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .second-screen .box {
+        overflow: hidden;
+    }
+    .second-screen .imgbox {
+        flex-basis: 100%;
+    }
+    .second-screen .imgbox img {
+        width: 100%;
+    }
+    .second-screen .textbox {
+        flex-basis: 100%;
+        background-color: #F2F2F2;
+        border-bottom: 1px rgba(109, 110, 113, 0.247) solid;
+    }
+    .second-screen .textbox h3 {
+        margin-top: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .second-screen .textbox p {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+    .second-screen .textbox ul {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .second-screen .textbox ul li {
+        list-style-type: circle;
+    }
+    .second-screen .no-1 {
+        order: 1;
+    }
+    .second-screen .no-2 {
+        order: 2;
+    }
+    .second-screen .no-3 {
+        order: 3;
+    }
+    .second-screen .no-4 {
+        order: 4;
+    }
+    .second-screen .no-5 {
+        order: 5;
+    }
+    .second-screen .no-6 {
+        order: 6;
+    }
+    .second-screen .no-7 {
+        order: 7;
+    }
+    .second-screen .no-8 {
+        order: 8;
+    }
+    .third-screen {
+        width: 100%;
+        display: flex;
+        background-position: center;
+        background-image: url("../image/aboutUs/test-06.png");
+    }
+    .third-screen .textbox {
+        flex-basis: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: rgba(000, 000, 000, .4);
+        color: aliceblue;
+    }
+    .third-screen .textbox h3 {
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .third-screen .textbox p {
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .first-screen {
+        width: 100%;
+        background-image: url("../image/aboutUs/banner.png");
+        background-size: 170%;
+        background-position: center;
+    }
+    .first-screen .box {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-bottom: 10%;
+    }
+    .first-screen h1,
+    h2 {
+        font-family: 'Quicksand';
+        color: aliceblue;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+    }
+    .first-screen h1 {
+        font-size: 2.2em;
+        padding-top: 10%;
+    }
+    .first-screen h2 {
+        font-size: 1.2em;
+        padding-left: 20%;
+        padding-right: 20%;
+        opacity: .7;
+        color: aliceblue;
+        text-align: left;
+    }
+    .first-screen .box {
+        text-align: center;
+    }
+    .first-screen .loader {
+        animation: spinningColor 3s ease-in-out infinite;
+        margin: 50px auto;
+        border: 5px double #f0eff5;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    .second-screen {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .second-screen .box {
+        overflow: hidden;
+    }
+    .second-screen .imgbox {
+        flex-basis: 100%;
+    }
+    .second-screen .imgbox img {
+        width: 100%;
+    }
+    .second-screen .textbox {
+        flex-basis: 100%;
+        background-color: #F2F2F2;
+        border-bottom: 1px rgba(109, 110, 113, 0.247) solid;
+    }
+    .second-screen .textbox h3 {
+        margin-top: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .second-screen .textbox p {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+    .second-screen .textbox ul {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .second-screen .textbox ul li {
+        list-style-type: circle;
+    }
+    .second-screen .no-1 {
+        order: 1;
+    }
+    .second-screen .no-2 {
+        order: 2;
+    }
+    .second-screen .no-3 {
+        order: 3;
+    }
+    .second-screen .no-4 {
+        order: 4;
+    }
+    .second-screen .no-5 {
+        order: 5;
+    }
+    .second-screen .no-6 {
+        order: 6;
+    }
+    .second-screen .no-7 {
+        order: 7;
+    }
+    .second-screen .no-8 {
+        order: 8;
+    }
+    .third-screen {
+        width: 100%;
+        display: flex;
+        background-position: center;
+        background-image: url("../image/aboutUs/test-06.png");
+    }
+    .third-screen .textbox {
+        flex-basis: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 5%;
+        margin-right: 5%;
         background-color: rgba(000, 000, 000, .4);
         color: aliceblue;
     }
@@ -137,14 +406,13 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .first-screen {
         width: 100%;
-        height: 80vh;
         background-image: url("../image/aboutUs/banner.png");
         background-size: 170%;
         background-position: center;
     }
     .first-screen .box {
         width: 100%;
-        height: 80vh;
+        padding-bottom: 10%;
         background-color: rgba(0, 0, 0, 0.4);
     }
     .first-screen h1,
@@ -244,7 +512,6 @@
         display: flex;
         background-position: center;
         background-image: url("../image/aboutUs/test-06.png");
-        height: 60vh;
     }
     .third-screen .textbox {
         flex-basis: 50%;
@@ -269,15 +536,14 @@
 @media (min-width: 1200px) {
     .first-screen {
         width: 100%;
-        height: 80vh;
         background-image: url("../image/aboutUs/banner.png");
         background-size: 100%;
         background-position: center;
     }
     .first-screen .box {
         width: 100%;
-        height: 80vh;
         background-color: rgba(0, 0, 0, 0.4);
+        padding-bottom: 10%;
     }
     .first-screen h1,
     h2 {
@@ -375,12 +641,11 @@
         display: flex;
         background-position: center;
         background-image: url("../image/aboutUs/test-06.png");
-        height: 60vh;
     }
     .third-screen .textbox {
         flex-basis: 50%;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2%;
+        margin-bottom: 2%;
         margin-left: 5%;
         background-color: rgba(000, 000, 000, .4);
         color: aliceblue;
@@ -395,4 +660,15 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+}
+
+/* 全尺寸統一設定 */
+.second-screen .textbox h3{
+    opacity: 0;
+}
+.second-screen .textbox p{
+    opacity: 0;
+}
+.second-screen .textbox ul{
+    opacity: 0;
 }
