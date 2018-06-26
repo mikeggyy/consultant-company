@@ -309,11 +309,16 @@
         margin-top: 20px;
     }
     .mainbox .mainContent .imgbox {
+        display: flex;
         flex-basis: 100%;
-        height: auto;
+        height: 80%;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
     }
     .mainbox .mainContent .imgbox img {
-        width: 100%;
+        width: 80%;
+        height: 80%;
     }
     .mainbox .main-01 {
         position: relative;
