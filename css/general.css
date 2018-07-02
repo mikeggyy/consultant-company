@@ -13,7 +13,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
 * {
-    /* outline: 1px red solid; */
+    outline: 1px red solid;
     list-style: none;
     font-family: "微軟正黑體";
 }
