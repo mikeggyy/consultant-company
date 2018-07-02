@@ -1,29 +1,38 @@
 @keyframes spinningColor {
-    0% {
-      transform: rotate(360deg);
-      border-top:5px dashed #177B57;
-      border-bottom:5px dashed #387eff;
-    }
-    25% {
-      border-top:5px dashed #3cff56;
-      border-bottom:5px dashed #6da7f7;
-    }
-    50% {
-      border-top:5px dashed #85fc95;
-      border-bottom:5px dashed #4ba3ff;
-    }
-    75% {
-      border-top:5px dashed #3cff56;
-      border-bottom:5px dashed #569dff;
-    }
-    100% {
-      border-top:5px dashed #177B57;
-      border-bottom:5px dashed #387eff;
-    }
+  0% {
+    transform: rotate(360deg);
+    border-top: 5px dashed #EC4233;
+    border-bottom: 5px dashed #387eff;
   }
+  25% {
+    border-top: 5px dashed rgb(238, 85, 71);
+    border-bottom: 5px dashed #6da7f7;
+  }
+  50% {
+    border-top: 5px dashed rgb(248, 124, 113);
+    border-bottom: 5px dashed #4ba3ff;
+  }
+  75% {
+    border-top: 5px dashed rgb(238, 85, 71);
+    border-bottom: 5px dashed #569dff;
+  }
+  100% {
+    border-top: 5px dashed #EC4233;
+    border-bottom: 5px dashed #387eff;
+  }
+}
 
-  @keyframes iconFocus{
-    0%{opacity: 1; top:0px}
-    50%{opacity: .5; top:-20px;}
-    100%{opacity: 1; top:0px;}
+@keyframes iconFocus {
+  0% {
+    opacity: 1;
+    top: 0px
   }
+  50% {
+    opacity: .5;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}

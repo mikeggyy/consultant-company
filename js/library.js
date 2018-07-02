@@ -511,35 +511,35 @@ urlLinkToService_1 = function () {
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_02.style.opacity == 1){
+    } else if (main_02.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_03.style.opacity == 1){
+    } else if (main_03.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_04.style.opacity == 1){
+    } else if (main_04.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_05.style.opacity == 1){
+    } else if (main_05.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_06.style.opacity == 1){
+    } else if (main_06.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
@@ -571,35 +571,35 @@ urlLinkToService_2 = function () {
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_02.style.opacity == 1){
+    } else if (main_02.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_03.style.opacity == 1){
+    } else if (main_03.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_04.style.opacity == 1){
+    } else if (main_04.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_05.style.opacity == 1){
+    } else if (main_05.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_06.style.opacity == 1){
+    } else if (main_06.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
@@ -631,35 +631,35 @@ urlLinkToService_3 = function () {
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_02.style.opacity == 1){
+    } else if (main_02.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_03.style.opacity == 1){
+    } else if (main_03.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_04.style.opacity == 1){
+    } else if (main_04.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_05.style.opacity == 1){
+    } else if (main_05.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_06.style.opacity == 1){
+    } else if (main_06.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
@@ -691,35 +691,35 @@ urlLinkToService_4 = function () {
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_02.style.opacity == 1){
+    } else if (main_02.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_03.style.opacity == 1){
+    } else if (main_03.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_04.style.opacity == 1){
+    } else if (main_04.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_05.style.opacity == 1){
+    } else if (main_05.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_06.style.opacity == 1){
+    } else if (main_06.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
@@ -751,35 +751,35 @@ urlLinkToService_5 = function () {
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_02.style.opacity == 1){
+    } else if (main_02.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_03.style.opacity == 1){
+    } else if (main_03.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_04.style.opacity == 1){
+    } else if (main_04.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_05.style.opacity == 1){
+    } else if (main_05.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_06.style.opacity == 1){
+    } else if (main_06.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
@@ -811,35 +811,35 @@ urlLinkToService_6 = function () {
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_02.style.opacity == 1){
+    } else if (main_02.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_03.style.opacity == 1){
+    } else if (main_03.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_04.style.opacity == 1){
+    } else if (main_04.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[4].style.animation = "";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_05.style.opacity == 1){
+    } else if (main_05.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
         iconBox.querySelectorAll(".img")[3].style.animation = "";
         iconBox.querySelectorAll(".img")[4].style.animation = "iconFocus 2s infinite";
         iconBox.querySelectorAll(".img")[5].style.animation = "";
-    }else if(main_06.style.opacity == 1){
+    } else if (main_06.style.opacity == 1) {
         iconBox.querySelectorAll(".img")[0].style.animation = "";
         iconBox.querySelectorAll(".img")[1].style.animation = "";
         iconBox.querySelectorAll(".img")[2].style.animation = "";
