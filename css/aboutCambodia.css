@@ -7,7 +7,7 @@ body{
         width: 100%;
         /* height: 80vh; */
         background-image: url("../image/aboutUs/banner.png");
-        background-size: 250%;
+        background-size: 300%;
         background-position: center;
     }
     .first-screen .box {
@@ -454,13 +454,13 @@ body{
         overflow: hidden;
     }
     .second-screen .imgbox {
-        flex-basis: 40%;
+        flex-basis: 60%;
     }
     .second-screen .imgbox img {
         width: 120%;
     }
     .second-screen .textbox {
-        flex-basis: 60%;
+        flex-basis: 100%;
         background-color: #F2F2F2;
         border-bottom: 1px rgba(109, 110, 113, 0.247) solid;
     }
@@ -473,39 +473,40 @@ body{
         margin-top: 20px;
         margin-left: 10%;
         margin-right: 10%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .second-screen .textbox ul {
         margin-top: 20px;
         margin-left: 10%;
         margin-right: 10%;
+        margin-bottom: 30px;
     }
     .second-screen .textbox ul li {
         list-style-type: circle;
     }
     .second-screen .no-1 {
-        order: 1;
+
     }
     .second-screen .no-2 {
-        order: 2;
+
     }
     .second-screen .no-3 {
-        order: 4;
+        margin-left: 40%;
     }
     .second-screen .no-4 {
-        order: 3;
+
     }
     .second-screen .no-5 {
-        order: 5;
+
     }
     .second-screen .no-6 {
-        order: 6;
+
     }
     .second-screen .no-7 {
-        order: 8;
+        margin-left: 40%;
     }
     .second-screen .no-8 {
-        order: 7;
+
     }
     .third-screen {
         width: 100%;
@@ -554,8 +555,10 @@ body{
         font-weight: 300;
     }
     .first-screen h1 {
-        font-size: 5em;
+        font-size: 4em;
         padding-top: 4%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     .first-screen h2 {
         font-size: 2em;
@@ -584,13 +587,13 @@ body{
         overflow: hidden;
     }
     .second-screen .imgbox {
-        flex-basis: 40%;
+        flex-basis: 70%;
     }
     .second-screen .imgbox img {
         width: 100%;
     }
     .second-screen .textbox {
-        flex-basis: 60%;
+        flex-basis: 100%;
         background-color: #F2F2F2;
         border-bottom: 1px rgba(109, 110, 113, 0.247) solid;
     }
@@ -603,6 +606,7 @@ body{
         margin-top: 20px;
         margin-left: 10%;
         margin-right: 10%;
+        margin-bottom: 30px;
     }
     .second-screen .textbox ul {
         margin-top: 20px;
@@ -611,30 +615,31 @@ body{
     }
     .second-screen .textbox ul li {
         list-style-type: circle;
+        margin-bottom: 30px;
     }
     .second-screen .no-1 {
-        order: 1;
+        
     }
     .second-screen .no-2 {
-        order: 2;
+        
     }
     .second-screen .no-3 {
-        order: 4;
+        margin-left: 30%;
     }
     .second-screen .no-4 {
-        order: 3;
+        
     }
     .second-screen .no-5 {
-        order: 5;
+        
     }
     .second-screen .no-6 {
-        order: 6;
+        
     }
     .second-screen .no-7 {
-        order: 8;
+        margin-left: 30%;
     }
     .second-screen .no-8 {
-        order: 7;
+        
     }
     .third-screen {
         width: 100%;

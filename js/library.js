@@ -135,49 +135,52 @@ headFeatures = function () {
 
 
 // 數字跳動效果
-var beatNum = 0;
-clientCount = function () {
-    var i = 0;
-    var clientNum = 123;
-    if (beatNum == 0) {
-        setInterval(function () {
-            if (i <= clientNum) {
-                document.querySelector('#main-03').querySelector('.foot-01').querySelector('strong').innerHTML = i;
-                i++;
-            }
-            return false;
-        }, 50);
-        beatNum++;
-    }
-}
 
-caseCount = function () {
-    var i = 0;
-    var serviceHour = 368;
-    if (beatNum == 1) {
-        setInterval(function () {
-            if (i <= serviceHour) {
-                document.querySelector('#main-03').querySelector('.foot-02').querySelector('strong').innerHTML = i;
-                i++;
-            }
-        }, 25);
-        beatNum++;
-    }
-}
+// clientCount = function () {
+//     var beatNum = 0;
+//     var i = 0;
+//     var clientNum = 123;
+//     if (beatNum == 0) {
+//         setInterval(function () {
+//             if (i <= clientNum) {
+//                 document.querySelector('#main-03').querySelector('.foot-01').querySelector('strong').innerHTML = i;
+//                 i++;
+//             }
+//             return false;
+//         }, 50);
+//         beatNum++;
+//     }
+// }
 
-serviceHours = function () {
-    var i = 0;
-    var serviceHour = 1200;
-    if (beatNum == 2) {
-        setInterval(function () {
-            if (i <= serviceHour) {
-                document.querySelector('#main-03').querySelector('.foot-03').querySelector('strong').innerHTML = i;
-                i++;
-            }
-        }, 1);
-        beatNum++;
-    }
-}
+// caseCount = function () {
+//     var beatNum = 0;
+//     var i = 0;
+//     var serviceHour = 368;
+//     if (beatNum == 1) {
+//         setInterval(function () {
+//             if (i <= serviceHour) {
+//                 document.querySelector('#main-03').querySelector('.foot-02').querySelector('strong').innerHTML = i;
+//                 i++;
+//             }
+//         }, 25);
+//         beatNum++;
+//     }
+// }
+
+// serviceHours = function () {
+//     var beatNum = 0;
+//     var i = 0;
+//     var serviceHour = 1200;
+//     if (beatNum == 2) {
+//         setInterval(function () {
+//             if (i <= serviceHour) {
+//                 document.querySelector('#main-03').querySelector('.foot-03').querySelector('strong').innerHTML = i;
+//                 i++;
+//             }
+//         }, 1);
+//         beatNum++;
+//     }
+// }
 
 // 右方nav highlight
 navHighLight01 = function () {
@@ -344,7 +347,7 @@ htmlScreenToZone1 = function () {
     navHighLight01();
     $("html,body").animate({
         scrollTop: $("#main-01").offset().top
-    }, 250);
+    }, 50);
     return false;
 }
 
@@ -352,7 +355,7 @@ htmlScreenToZone2 = function () {
     navHighLight02();
     $("html,body").animate({
         scrollTop: $("#main-02").offset().top
-    }, 250);
+    }, 50);
     return false;
 }
 
@@ -360,7 +363,7 @@ htmlScreenToZone3 = function () {
     navHighLight03();
     $("html,body").animate({
         scrollTop: $("#main-03").offset().top
-    }, 250);
+    }, 50);
     return false;
 }
 
@@ -368,7 +371,7 @@ htmlScreenToZone4 = function () {
     navHighLight04();
     $("html,body").animate({
         scrollTop: $("#main-04").offset().top
-    }, 250);
+    }, 50);
     return false;
 }
 
@@ -376,7 +379,7 @@ htmlScreenToZone5 = function () {
     navHighLight05();
     $("html,body").animate({
         scrollTop: $("#main-05").offset().top
-    }, 250);
+    }, 50);
     return false;
 }
 

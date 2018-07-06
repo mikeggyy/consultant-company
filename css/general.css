@@ -13,7 +13,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
 * {
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
     list-style: none;
     font-family: "微軟正黑體";
 }
@@ -428,7 +428,7 @@ header .language select{
 }
 nav span {
     display: block;
-    font-size: 1rem;
+    font-size: .5rem;
     color: aliceblue;
     cursor: pointer;
     margin-bottom: 10px;
