@@ -12,22 +12,26 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
+
 * {
     /* outline: 1px red solid; */
     list-style: none;
     font-family: "微軟正黑體";
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: #222222;
     transition: .5s;
 }
-a{
+
+a {
     color: aliceblue;
     transition: .5s;
 }
-body{
-    overflow-x:hidden;
+
+body {
+    overflow-x: hidden;
     width: 100vw;
 }
 
@@ -37,7 +41,7 @@ body{
 }
 
 @media (max-width: 575.98px) {
-    .menu-text{
+    .menu-text {
         font-size: 1.6rem;
     }
     .master-text {
@@ -73,7 +77,7 @@ body{
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .menu-text{
+    .menu-text {
         font-size: 1.7rem;
     }
     .master-text {
@@ -109,7 +113,7 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .menu-text{
+    .menu-text {
         font-size: 2rem;
     }
     .master-text {
@@ -145,14 +149,14 @@ body{
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .menu-text{
+    .menu-text {
         font-size: 2rem;
     }
     .master-text {
         font-size: 2rem;
     }
     .normal-text {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .normal-button {
         background-color: #222222;
@@ -181,7 +185,7 @@ body{
 }
 
 @media (min-width: 1200px) {
-    .menu-text{
+    .menu-text {
         font-size: 2rem;
     }
     .master-text {
@@ -235,19 +239,84 @@ body{
 
 /* 選單 */
 
+@media (max-width: 575.98px) {
+    header {
+        display: flex;
+        width: 100%;
+    }
+    header .box:nth-child(1) {
+        border-right: 1px black solid;
+    }
+    header .box:nth-child(2) {
+        border-right: 1px black solid;
+    }
+    header .box:nth-child(3) {
+        border-right: 1px black solid;
+    }
+    header .box:nth-child(4) {
+        border-right: 1px black solid;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        width: 70px;
+    }
+    header .box:nth-child(1) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(2) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(3) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(4) {
+        border-bottom: 1px black solid;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+        width: 70px;
+    }
+    header .box:nth-child(1) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(2) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(3) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(4) {
+        border-bottom: 1px black solid;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        width: 70px;
+    }
+    header .box:nth-child(1) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(2) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(3) {
+        border-bottom: 1px black solid;
+    }
+    header .box:nth-child(4) {
+        border-bottom: 1px black solid;
+    }
+}
+
 header {
-    width: 70px;
     position: fixed;
     z-index: 500;
     color: aliceblue;
     height: 140px;
-}
-
-header .box:nth-child(1) {
-    border-bottom: 1px black solid;
-}
-header .box:nth-child(2) {
-    border-bottom: 1px black solid;
 }
 
 header .box {
@@ -274,6 +343,7 @@ header .box img {
     right: 0;
     margin: auto;
 }
+
 header .menu {
     width: 30px;
     height: 20px;
@@ -289,10 +359,12 @@ header .menu {
     transition: 1s;
     z-index: 6;
 }
-header .menuBox:hover #hideMenu{
-    left:50px;
+
+header .menuBox:hover #hideMenu {
+    left: 50px;
     opacity: 1;
 }
+
 header .menu .line {
     width: 30px;
     padding-top: 1px;
@@ -322,36 +394,37 @@ header .menu .bottomline {
 }
 
 /* 隱藏選單 */
-#hideMenu{
+
+#hideMenu {
     width: 100px;
     display: flex;
     flex-wrap: wrap;
     z-index: 900;
     position: absolute;
-    top:-25px;
-    left:-200px;
+    top: -25px;
+    left: -200px;
     background-color: #177B57;
     transition: .5s;
     opacity: 0;
     border: 1px solid black;
 }
 
-#hideMenu p{
+#hideMenu p {
     flex-basis: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
 
-#hideMenu p:hover{
+#hideMenu p:hover {
     background-color: rgb(18, 92, 65);
 }
 
-#hideMenu p:hover a{
-    color:black;
+#hideMenu p:hover a {
+    color: black;
 }
 
-#hideMenu .serviceBox{
+#hideMenu .serviceBox {
     flex-basis: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -360,23 +433,23 @@ header .menu .bottomline {
     position: relative;
 }
 
-#hideMenu .serviceBox:hover{
+#hideMenu .serviceBox:hover {
     background-color: rgb(18, 92, 65);
-    color:black;
+    color: black;
     transition: 1s;
 }
 
-#hideMenu .serviceBox:hover .serviceList{
+#hideMenu .serviceBox:hover .serviceList {
     opacity: 1;
     transition: .5s;
-    left:0px;
+    left: 0px;
 }
 
-#hideMenu .serviceBox .serviceList{
+#hideMenu .serviceBox .serviceList {
     width: 250px;
     position: absolute;
-    top:0;
-    left:-200px;
+    top: 0;
+    left: -200px;
     background-color: #177B57;
     display: flex;
     flex-wrap: wrap;
@@ -384,40 +457,140 @@ header .menu .bottomline {
     /* border: 1px solid black; */
 }
 
-#hideMenu .serviceBox .serviceList a{
+#hideMenu .serviceBox .serviceList a {
     flex-basis: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#hideMenu .serviceBox .serviceList a:hover{
+#hideMenu .serviceBox .serviceList a:hover {
     background-color: rgb(18, 92, 65);
 }
+
 /* 語言選擇 */
-header .language{
+
+@media (max-width: 575.98px) {
+    header .language button {
+        position: absolute;
+        left: 0px;
+        width: 100px;
+    }
+    header .language button:nth-child(1) {
+        top: -300%;
+    }
+    header .language button:nth-child(2) {
+        top: -300%;
+    }
+    header .language button:nth-child(3) {
+        top: -300%;
+    }
+    header .language button:nth-child(4) {
+        top: -300%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header .language button {
+        position: absolute;
+        left: -300%;
+        width: 100px;
+    }
+    header .language button:nth-child(1) {
+        top: 0px;
+    }
+    header .language button:nth-child(2) {
+        top: 39px;
+    }
+    header .language button:nth-child(3) {
+        top: 78px;
+    }
+    header .language button:nth-child(4) {
+        top: 117px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header .language button {
+        position: absolute;
+        left: -300%;
+        width: 100px;
+    }
+    header .language button:nth-child(1) {
+        top: 0px;
+    }
+    header .language button:nth-child(2) {
+        top: 39px;
+    }
+    header .language button:nth-child(3) {
+        top: 78px;
+    }
+    header .language button:nth-child(4) {
+        top: 117px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header .language button {
+        position: absolute;
+        left: -300%;
+        width: 100px;
+    }
+    header .language button:nth-child(1) {
+        top: 0px;
+    }
+    header .language button:nth-child(2) {
+        top: 39px;
+    }
+    header .language button:nth-child(3) {
+        top: 78px;
+    }
+    header .language button:nth-child(4) {
+        top: 117px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header .language button {
+        position: absolute;
+        left: -300%;
+        width: 100px;
+    }
+    header .language button:nth-child(1) {
+        top: 0px;
+    }
+    header .language button:nth-child(2) {
+        top: 39px;
+    }
+    header .language button:nth-child(3) {
+        top: 78px;
+    }
+    header .language button:nth-child(4) {
+        top: 117px;
+    }
+}
+
+header .language {
     width: 70px;
     height: 70px;
     position: relative;
     cursor: pointer;
     transition: 1s ease;
 }
-header .language select{
-    position: absolute;
-    left:-300%;
-}
 
 /* 右方導覽列 */
-@media (max-width: 575.98px){
+
+@media (max-width: 575.98px) {
     nav {
         position: fixed;
-        top: 3%;
-        right: 1%;
+        top: 10%;
+        right: 0;
         width: auto;
         z-index: 600;
+        display: none;
     }
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
     nav {
         position: fixed;
         top: 20%;
@@ -426,13 +599,21 @@ header .language select{
         z-index: 600;
     }
 }
+
+nav {
+    background-color: #00000083;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
 nav span {
     display: block;
     font-size: .5rem;
     color: aliceblue;
-    cursor: pointer;
     margin-bottom: 10px;
     position: relative;
+    cursor: default;
 }
 
 nav span:nth-child(1) {
@@ -450,6 +631,36 @@ nav span::before {
     border-radius: 50%;
     background-color: aliceblue;
     z-index: 3;
+}
+
+/* LOGO */
+
+@media (max-width: 575.98px) {
+    .logoBox {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+        animation:logo 2s 1s 1;
+    }
+    .largeScreenLogo {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .logoBox {
+        display: none;
+    }
+    .largeScreenLogo{
+        animation:logo 2s 1s 1;
+    }
+}
+
+.logoBox a img {
+    width: 100%;
 }
 
 .copyright {

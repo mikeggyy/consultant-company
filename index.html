@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Aqua Consulting Limited" />
+    <meta property="og:description" content="Our consultants are based on deep industry knowledge and professionalism. They are not only good at listening to the needs of customers, but also brave enough to propose forward-looking ideas."
+    />
+    <meta property="og:url" content="http://www.aquacambodia.com/" />
+    <meta property="og:image" content="https://www.aquacambodia.com/image/icon/logo.png" />
     <link rel="Shortcut Icon" type="image/x-icon" href="image/icon/logo.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animation.css">
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -25,10 +33,26 @@
 <body>
 
     <!-- 選單 -->
+    <div class="logoBox">
+        <a href="##">
+            <img src="image/icon/logo.png" alt="">
+        </a>
+    </div>
+
     <header>
         <div class="box">
-            <a href="index.html">
-                <img src="image/icon/logo.png" alt="">
+            <a href="https://line.me/ti/p/dGwEiVG_MJ" target="_blank">
+                <img src="image/icon/LINE.png" alt="" title="ID : iou5152236">
+            </a>
+        </div>
+        <!-- <div class="box">
+            <a href="https://u.wechat.com/IBxWSbOF2r1oN_MFwlL-eqk" target="_blank">
+                <img src="image/icon/WeChat.png" alt="" title="ID : a5152236">
+            </a>
+        </div> -->
+        <div class="box">
+            <a href="mailto:Aqua.limitedcambodia@gmail.com" target="_blank">
+                <img src="image/icon/Gmail_Icon.png" alt="" title="E-Mail：Aqua.limitedcambodia@gmail.com">
             </a>
         </div>
         <!-- <div class="box menuBox">
@@ -59,17 +83,21 @@
         </div> -->
         <div id="languageBtn" class="box">
             <div class="language-img-box">
-                <img src="image/icon/language.png" alt="">
+                <img src="image/icon/translate-icon.png" alt="">
             </div>
         </div>
         <div class="language">
-            <select name="" id="">
+            <button id="EN" type="button" class="btn btn-success">English</button>
+            <button id="TW" type="button" class="btn btn-success">繁體中文</button>
+            <button id="CN" type="button" class="btn btn-success">简体中文</button>
+            <button id="KH" type="button" class="btn btn-success">ភាសាខ្មែរ</button>
+            <!-- <select name="" id="">
                 <option value="EN">English</option>
                 <option value="TW">繁體中文</option>
                 <option value="CN">简体中文</option>
-                <option value="VN">Người việt nam</option>
                 <option value="KH">ភាសាខ្មែរ</option>
-            </select>
+                <option value="VN">Người việt nam</option>             
+            </select> -->
         </div>
     </header>
 
@@ -96,14 +124,23 @@
         <div id="main-01" class="main-01 container-fuild section">
             <div class="text-box row">
                 <p class="offset-1 col-12">
-                    <em class="menu-text text-dark font-weight-bold">
+                    <img src="image/icon/logo.png" alt="" class="largeScreenLogo" style="width: 70px">
+                    <em class="menu-text text-white font-weight-bold">
                         Aqua Consulting Limited
                     </em>
                 </p>
                 <p class="offset-1 col-12">
-                    <strong class="normal-text text-dark">
-                        Our consultants are based on deep industry knowledge and professionalism. They are not only good at listening to the needs
-                        of customers, but also brave enough to propose forward-looking ideas.
+                    <strong class="normal-text text-white">
+                        As to Cambodia market, We provide company registration application, labor certificate, international driver's license to
+                        change local driver's license, visa, tax declaration and tax related issues.
+                    </strong>
+                </p>
+                <p class="offset-1 col-12">
+                    <strong class="normal-text text-white">
+                        For foreigners who want to do business in Cambodia, they first need to set up a company in Cambodia. Aquarius Consulting
+                        Co., Ltd. has a wealth of experience in setting up a company for foreigners. Not only that, but after
+                        the establishment of your company, we can also provide one-stop services such as accounting and taxation
+                        and personnel services.
                     </strong>
                 </p>
                 <!-- <div class="offset-1 col-12 col-lg-12 col-xl-6">
@@ -116,7 +153,7 @@
             </div>
 
             <div class="row foot no-gutters col-12">
-                <div class="foot-01 col-12 col-lg-12 col-xl-12">
+                <div class="foot-01 col-12 col-lg-6 col-xl-12">
                     <a href="##">
                         <div class="mask"></div>
                         <!-- <p class="text-left offset-4">
@@ -131,7 +168,7 @@
                         </p>
                     </a>
                 </div>
-                <div class="foot-01 col-12 col-lg-12 col-xl-12">
+                <div class="foot-01 col-12 col-lg-6 col-xl-12">
                     <a href="##">
                         <div class="mask"></div>
                         <!-- <p class="text-left offset-4">
@@ -147,7 +184,7 @@
                     </a>
                 </div>
 
-                <div class="foot-01 col-12 col-lg-12 col-xl-12">
+                <div class="foot-01 col-12 col-lg-6 col-xl-12">
                     <a href="##">
                         <div class="mask"></div>
                         <!-- <p class="text-left offset-4">
@@ -163,7 +200,7 @@
                     </a>
                 </div>
 
-                <div class="foot-01 col-12 col-lg-12 col-xl-12">
+                <div class="foot-01 col-12 col-lg-6 col-xl-12">
                     <a href="##">
                         <div class="mask"></div>
                         <!-- <p class="text-left offset-4">
@@ -179,7 +216,7 @@
                     </a>
                 </div>
 
-                <div class="foot-01 col-12 col-lg-12 col-xl-12">
+                <div class="foot-01 col-12 col-lg-6 col-xl-12">
                     <a href="##">
                         <div class="mask"></div>
                         <!-- <p class="text-left offset-4">
@@ -195,7 +232,7 @@
                     </a>
                 </div>
 
-                <div class="foot-01 col-12 col-lg-12 col-xl-12">
+                <div class="foot-01 col-12 col-lg-6 col-xl-12">
                     <a href="whatDoYouNeedToKnowToDoBusiness.html">
                         <div class="mask"></div>
                         <!-- <p class="text-left offset-4">
@@ -378,7 +415,7 @@
             <div class="text-box text-left row">
                 <p class="offset-1 col-12">
                     <em class="menu-text">
-                        Choose the advantages of Aquarius
+                        Choose the advantages of Aqua
                     </em>
                 </p>
                 <p class="offset-1 col-12">
@@ -520,17 +557,17 @@
         <div id="main-05" class="main-05 container-fuild section">
             <div class="text-box row">
                 <p class="offset-1 col-12">
-                    <em class="menu-text text-dark">
+                    <em class="menu-text text-white">
                         Do not hesitate
                     </em>
                 </p>
                 <p class="offset-1 col-12">
-                    <em class="menu-text text-dark font-weight-bold">
+                    <em class="menu-text text-white font-weight-bold">
                         Contact us now!
                     </em>
                 </p>
                 <p class="offset-1 col-12">
-                    <strong class="master-text text-dark">
+                    <strong class="master-text text-white">
 
                     </strong>
                 </p>
@@ -547,19 +584,19 @@
                         <!-- <a href="##">
                             <img src="image/icon/fb.png" alt="">
                         </a> -->
-                        <a href="##">
+                        <!-- <a href="https://line.me/ti/p/dGwEiVG_MJ" target="_blank">
                             <img src="image/icon/LINE.png" alt="">
-                            <p>ID: iou5152236</p>
-                        </a>
-                        <a href="##">
+                            <p>ID : iou5152236</p>
+                        </a> -->
+                        <!-- <a href="https://u.wechat.com/IBxWSbOF2r1oN_MFwlL-eqk" target="_blank">
                             <img src="image/icon/WeChat.png" alt="">
-                            <p>ID: a5152236</p>
+                            <p>ID : a5152236</p>
                         </a>
-                        <p class="email text-left">
+                        <a class="email text-left" href="mailto:Aqua.limitedcambodia@gmail.com" target="_blank">
                             <strong class="normal-text">
                                 E-Mail：Aqua.limitedcambodia@gmail.com
                             </strong>
-                        </p>
+                        </a> -->
                         <p class="copyright small text-center">
                             © 2018 Aqua Consulting Limited
                         </p>
@@ -579,6 +616,19 @@
             </div>
         </div>
     </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92241789-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92241789-3');
+    </script>
+
 </body>
 
 </html>

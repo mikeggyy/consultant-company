@@ -7,19 +7,19 @@
             if (xhr.readyState == 4 && xhr.status == 200) {
                 console.log(xhr.responseText);
                 // json.parse將json轉換成物件 之後抓取你要的名稱
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[3].innerHTML = JSON.parse(xhr.responseText).language_KN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                document.querySelector('.language').querySelectorAll('button')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
+                document.querySelector('.language').querySelectorAll('button')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
+                document.querySelector('.language').querySelectorAll('button')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
+                document.querySelector('.language').querySelectorAll('button')[3].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                // document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
                 document.querySelector('#zone-01').innerHTML = JSON.parse(xhr.responseText).rightNav_01;
                 document.querySelector('#zone-02').innerHTML = JSON.parse(xhr.responseText).rightNav_02;
                 document.querySelector('#zone-03').innerHTML = JSON.parse(xhr.responseText).rightNav_03;
                 document.querySelector('#zone-04').innerHTML = JSON.parse(xhr.responseText).rightNav_04;
                 document.querySelector('#zone-05').innerHTML = JSON.parse(xhr.responseText).rightNav_05;
                 document.querySelector('#main-01').querySelector('.text-box').querySelector('em').innerHTML = JSON.parse(xhr.responseText).firstScreen_01_text;
-                document.querySelector('#main-01').querySelector('.text-box').querySelector('strong').innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
-                // document.querySelector('#main-01').querySelector('.text-box').querySelector('span').querySelector('a').innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_04_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_05_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[2].innerHTML = JSON.parse(xhr.responseText).firstScreen_06_text;
@@ -90,19 +90,19 @@
             if (xhr.readyState == 4 && xhr.status == 200) {
                 console.log(xhr.responseText);
                 // json.parse將json轉換成物件 之後抓取你要的名稱
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[3].innerHTML = JSON.parse(xhr.responseText).language_KN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                document.querySelector('.language').querySelectorAll('button')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
+                document.querySelector('.language').querySelectorAll('button')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
+                document.querySelector('.language').querySelectorAll('button')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
+                document.querySelector('.language').querySelectorAll('button')[3].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                // document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
                 document.querySelector('#zone-01').innerHTML = JSON.parse(xhr.responseText).rightNav_01;
                 document.querySelector('#zone-02').innerHTML = JSON.parse(xhr.responseText).rightNav_02;
                 document.querySelector('#zone-03').innerHTML = JSON.parse(xhr.responseText).rightNav_03;
                 document.querySelector('#zone-04').innerHTML = JSON.parse(xhr.responseText).rightNav_04;
                 document.querySelector('#zone-05').innerHTML = JSON.parse(xhr.responseText).rightNav_05;
                 document.querySelector('#main-01').querySelector('.text-box').querySelector('em').innerHTML = JSON.parse(xhr.responseText).firstScreen_01_text;
-                document.querySelector('#main-01').querySelector('.text-box').querySelector('strong').innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
-                // document.querySelector('#main-01').querySelector('.text-box').querySelector('span').querySelector('a').innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_04_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_05_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[2].innerHTML = JSON.parse(xhr.responseText).firstScreen_06_text;
@@ -173,19 +173,19 @@
             if (xhr.readyState == 4 && xhr.status == 200) {
                 console.log(xhr.responseText);
                 // json.parse將json轉換成物件 之後抓取你要的名稱
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[3].innerHTML = JSON.parse(xhr.responseText).language_KN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                document.querySelector('.language').querySelectorAll('button')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
+                document.querySelector('.language').querySelectorAll('button')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
+                document.querySelector('.language').querySelectorAll('button')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
+                document.querySelector('.language').querySelectorAll('button')[3].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                // document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
                 document.querySelector('#zone-01').innerHTML = JSON.parse(xhr.responseText).rightNav_01;
                 document.querySelector('#zone-02').innerHTML = JSON.parse(xhr.responseText).rightNav_02;
                 document.querySelector('#zone-03').innerHTML = JSON.parse(xhr.responseText).rightNav_03;
                 document.querySelector('#zone-04').innerHTML = JSON.parse(xhr.responseText).rightNav_04;
                 document.querySelector('#zone-05').innerHTML = JSON.parse(xhr.responseText).rightNav_05;
                 document.querySelector('#main-01').querySelector('.text-box').querySelector('em').innerHTML = JSON.parse(xhr.responseText).firstScreen_01_text;
-                document.querySelector('#main-01').querySelector('.text-box').querySelector('strong').innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
-                // document.querySelector('#main-01').querySelector('.text-box').querySelector('span').querySelector('a').innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_04_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_05_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[2].innerHTML = JSON.parse(xhr.responseText).firstScreen_06_text;
@@ -251,24 +251,24 @@
 
     function loadVnContent() {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'src/kh.json', true);
+        xhr.open('GET', 'src/vn.json', true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 console.log(xhr.responseText);
                 // json.parse將json轉換成物件 之後抓取你要的名稱
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[3].innerHTML = JSON.parse(xhr.responseText).language_KN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                document.querySelector('.language').querySelectorAll('button')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
+                document.querySelector('.language').querySelectorAll('button')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
+                document.querySelector('.language').querySelectorAll('button')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
+                document.querySelector('.language').querySelectorAll('button')[3].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                // document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
                 document.querySelector('#zone-01').innerHTML = JSON.parse(xhr.responseText).rightNav_01;
                 document.querySelector('#zone-02').innerHTML = JSON.parse(xhr.responseText).rightNav_02;
                 document.querySelector('#zone-03').innerHTML = JSON.parse(xhr.responseText).rightNav_03;
                 document.querySelector('#zone-04').innerHTML = JSON.parse(xhr.responseText).rightNav_04;
                 document.querySelector('#zone-05').innerHTML = JSON.parse(xhr.responseText).rightNav_05;
                 document.querySelector('#main-01').querySelector('.text-box').querySelector('em').innerHTML = JSON.parse(xhr.responseText).firstScreen_01_text;
-                document.querySelector('#main-01').querySelector('.text-box').querySelector('strong').innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
-                // document.querySelector('#main-01').querySelector('.text-box').querySelector('span').querySelector('a').innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_04_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_05_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[2].innerHTML = JSON.parse(xhr.responseText).firstScreen_06_text;
@@ -334,24 +334,24 @@
 
     function loadKhContent() {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'src/vn.json', true);
+        xhr.open('GET', 'src/kh.json', true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 console.log(xhr.responseText);
                 // json.parse將json轉換成物件 之後抓取你要的名稱
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[3].innerHTML = JSON.parse(xhr.responseText).language_KN;
-                document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                document.querySelector('.language').querySelectorAll('button')[0].innerHTML = JSON.parse(xhr.responseText).language_EN;
+                document.querySelector('.language').querySelectorAll('button')[1].innerHTML = JSON.parse(xhr.responseText).language_TW;
+                document.querySelector('.language').querySelectorAll('button')[2].innerHTML = JSON.parse(xhr.responseText).language_CN;
+                document.querySelector('.language').querySelectorAll('button')[3].innerHTML = JSON.parse(xhr.responseText).language_VN;
+                // document.querySelector('.language').querySelector('select').querySelectorAll('option')[4].innerHTML = JSON.parse(xhr.responseText).language_VN;
                 document.querySelector('#zone-01').innerHTML = JSON.parse(xhr.responseText).rightNav_01;
                 document.querySelector('#zone-02').innerHTML = JSON.parse(xhr.responseText).rightNav_02;
                 document.querySelector('#zone-03').innerHTML = JSON.parse(xhr.responseText).rightNav_03;
                 document.querySelector('#zone-04').innerHTML = JSON.parse(xhr.responseText).rightNav_04;
                 document.querySelector('#zone-05').innerHTML = JSON.parse(xhr.responseText).rightNav_05;
                 document.querySelector('#main-01').querySelector('.text-box').querySelector('em').innerHTML = JSON.parse(xhr.responseText).firstScreen_01_text;
-                document.querySelector('#main-01').querySelector('.text-box').querySelector('strong').innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
-                // document.querySelector('#main-01').querySelector('.text-box').querySelector('span').querySelector('a').innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_02_text;
+                document.querySelector('#main-01').querySelector('.text-box').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_03_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[0].innerHTML = JSON.parse(xhr.responseText).firstScreen_04_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[1].innerHTML = JSON.parse(xhr.responseText).firstScreen_05_text;
                 document.querySelector('#main-01').querySelector('.foot').querySelectorAll('strong')[2].innerHTML = JSON.parse(xhr.responseText).firstScreen_06_text;

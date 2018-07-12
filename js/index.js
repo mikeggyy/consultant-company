@@ -2,11 +2,15 @@ resizeLoad();
 // 第一屏
 window.addEventListener("load", function () {
     // 重新load的時候回到頂部
-    headFeatures();
+
     $("html,body").animate({
         scrollTop: $("#main-01").offset().top
     }, 10);
-
+    if ($(window).width() > 576) {
+        headFeatures();
+    } else if($(window).width() <= 576) {
+        headFeaturesSmall();
+    }
     // 當螢幕大小發生變化事件
     var nav = document.querySelector("nav");
     if ($(window).width() < 992) {
@@ -30,9 +34,9 @@ window.addEventListener("load", function () {
                 navHighLight02();
             } else if (windowTop >= (main03Top - 200) && windowTop < (main04Top - 200)) {
                 navHighLight03();
-                clientCount();
-                caseCount();
-                serviceHours();
+                // clientCount();
+                // caseCount();
+                // serviceHours();
             } else if (windowTop >= (main04Top - 200) && windowTop < (main05Top - 200)) {
                 navHighLight04();
             } else if (windowTop >= (main05Top - 200)) {
@@ -42,9 +46,9 @@ window.addEventListener("load", function () {
 
     } else if ($(window).width() >= 992) {
         // 螢幕大於寬度992時觸發
-        $(function(){
+        $(function () {
             $('#dowebok').fullpage({
-                afterLoad: function(anchorLink, index){
+                afterLoad: function (anchorLink, index) {
                     // if(index==1){
                     //     navHighLight01();
                     // }
@@ -61,24 +65,24 @@ window.addEventListener("load", function () {
                     //     navHighLight05();
                     // }
                 },
-                onLeave: function(index, nextIndex){
-                    if(nextIndex == '1'){
+                onLeave: function (index, nextIndex) {
+                    if (nextIndex == '1') {
                         navHighLight01();
                     }
-                    if(nextIndex == '2'){
+                    if (nextIndex == '2') {
                         navHighLight02();
                     }
-                    if(nextIndex == '3'){
+                    if (nextIndex == '3') {
                         navHighLight03();
                     }
-                    if(nextIndex == '4'){
+                    if (nextIndex == '4') {
                         navHighLight04();
                     }
-                    if(nextIndex == '5'){
+                    if (nextIndex == '5') {
                         navHighLight05();
                     }
                 }
-        
+
             });
         });
         // 滑鼠滾輪整屏移動

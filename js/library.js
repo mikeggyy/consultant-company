@@ -96,43 +96,161 @@ detectHeight_04 = function () {
 
 // head功能
 headFeatures = function () {
-    var select = document.querySelector(".language").querySelector("select");
+
+    var language = document.querySelector(".language");
+    language.querySelectorAll("button")[0].style.left = "-300%";
+    language.querySelectorAll("button")[1].style.left = "-300%";
+    language.querySelectorAll("button")[2].style.left = "-300%";
+    language.querySelectorAll("button")[3].style.left = "-300%";
     // 語言彈出視窗
+
     document.querySelector("#languageBtn").addEventListener("click", function () {
-        if (select.style.left == "-300%") {
-            select.style.transition = ".5s ease";
-            select.style.left = "0px";
+        if (language.querySelectorAll("button")[0].style.left == "-300%") {
+            for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+                language.querySelectorAll("button")[i].style.transition = ".5s ease";
+                language.querySelectorAll("button")[i].style.left = "0px";
+            }
+
         } else {
-            select.style.transition = ".5s ease";
-            select.style.left = "-300%";
+            for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+                language.querySelectorAll("button")[i].style.transition = ".5s ease";
+                language.querySelectorAll("button")[i].style.left = "-300%";
+            }
         }
     });
     // 切換語言按鈕點擊監聽
-    select.addEventListener("change", function () {
-        if (select.value == "TW") {
-            loadTwContent();
-            select.style.transition = ".5s ease";
-            select.style.left = "-300%";
-        } else if (select.value == "CN") {
-            loadCnContent();
-            select.style.transition = ".5s ease";
-            select.style.left = "-300%";
-        } else if (select.value == "EN") {
-            loadEngContent();
-            select.style.transition = ".5s ease";
-            select.style.left = "-300%";
-        } else if (select.value == "VN") {
-            loadVnContent();
-            select.style.transition = ".5s ease";
-            select.style.left = "-300%";
-        } else if (select.value == "KH") {
-            loadKhContent();
-            select.style.transition = ".5s ease";
-            select.style.left = "-300%";
+    language.querySelector("#TW").addEventListener("click", function () {
+        loadTwContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.left = "-300%";
         }
     });
+    language.querySelector("#EN").addEventListener("click", function () {
+        loadEngContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.left = "-300%";
+        }
+    });
+    language.querySelector("#CN").addEventListener("click", function () {
+        loadCnContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.left = "-300%";
+        }
+    });
+    language.querySelector("#KH").addEventListener("click", function () {
+        loadKhContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.left = "-300%";
+        }
+    });
+    // languageBtn.addEventListener("change", function () {
+    //     if (languageBtn.value == "TW") {
+    //         loadTwContent();
+    //         languageBtn.style.transition = ".5s ease";
+    //         languageBtn.style.left = "-300%";
+    //     } else if (languageBtn.value == "CN") {
+    //         loadCnContent();
+    //         languageBtn.style.transition = ".5s ease";
+    //         languageBtn.style.left = "-300%";
+    //     } else if (languageBtn.value == "EN") {
+    //         loadEngContent();
+    //         languageBtn.style.transition = ".5s ease";
+    //         languageBtn.style.left = "-300%";
+    //     } else if (languageBtn.value == "VN") {
+    //         loadVnContent();
+    //         languageBtn.style.transition = ".5s ease";
+    //         languageBtn.style.left = "-300%";
+    //     } else if (languageBtn.value == "KH") {
+    //         loadKhContent();
+    //         languageBtn.style.transition = ".5s ease";
+    //         languageBtn.style.left = "-300%";
+    //     }
+    // });
 }
 
+headFeaturesSmall = function () {
+
+    var language = document.querySelector(".language");
+    language.querySelectorAll("button")[0].style.top = "-300%";
+    language.querySelectorAll("button")[1].style.top = "-300%";
+    language.querySelectorAll("button")[2].style.top = "-300%";
+    language.querySelectorAll("button")[3].style.top = "-300%";
+    // 語言彈出視窗
+
+    document.querySelector("#languageBtn").addEventListener("click", function () {
+        if (language.querySelectorAll("button")[0].style.top == "-300%") {
+            for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+                language.querySelectorAll("button")[i].style.transition = ".5s ease";
+                language.querySelectorAll("button")[0].style.top = "0px";
+                language.querySelectorAll("button")[1].style.top = "39px";
+                language.querySelectorAll("button")[2].style.top = "78px";
+                language.querySelectorAll("button")[3].style.top = "117px";
+            }
+
+        } else {
+            for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+                language.querySelectorAll("button")[i].style.transition = ".5s ease";
+                language.querySelectorAll("button")[i].style.top = "-300%";
+            }
+        }
+    });
+    // 切換語言按鈕點擊監聽
+    language.querySelector("#TW").addEventListener("click", function () {
+        loadTwContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.top = "-300%";
+        }
+    });
+    language.querySelector("#EN").addEventListener("click", function () {
+        loadEngContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.top = "-300%";
+        }
+    });
+    language.querySelector("#CN").addEventListener("click", function () {
+        loadCnContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.top = "-300%";
+        }
+    });
+    language.querySelector("#KH").addEventListener("click", function () {
+        loadKhContent();
+        for (var i = 0; i < language.querySelectorAll("button").length; i++) {
+            language.querySelectorAll("button")[i].style.transition = ".5s ease";
+            language.querySelectorAll("button")[i].style.top = "-300%";
+        }
+    });
+    // select.addEventListener("change", function () {
+    //     if (select.value == "TW") {
+    //         loadTwContent();
+    //         select.style.transition = ".5s";
+    //         select.style.top = "0px";
+    //     } else if (select.value == "CN") {
+    //         loadCnContent();
+    //         select.style.transition = ".5s";
+    //         select.style.top = "0px";
+    //     } else if (select.value == "EN") {
+    //         loadEngContent();
+    //         select.style.transition = ".5s";
+    //         select.style.top = "0px";
+    //     } else if (select.value == "VN") {
+    //         loadVnContent();
+    //         select.style.transition = ".5s";
+    //         select.style.top = "0px";
+    //     } else if (select.value == "KH") {
+    //         loadKhContent();
+    //         select.style.transition = ".5s";
+    //         select.style.top = "0px";
+    //     }
+    // });
+}
 
 // 數字跳動效果
 
@@ -185,7 +303,7 @@ headFeatures = function () {
 // 右方nav highlight
 navHighLight01 = function () {
     var nav = document.querySelector("nav");
-    nav.querySelectorAll("span")[0].style.color = "#177B57";
+    nav.querySelectorAll("span")[0].style.color = "#00B0FF";
     nav.querySelectorAll("span")[1].style.color = "white";
     nav.querySelectorAll("span")[2].style.color = "white";
     nav.querySelectorAll("span")[3].style.color = "white";
@@ -194,7 +312,7 @@ navHighLight01 = function () {
 navHighLight02 = function () {
     var nav = document.querySelector("nav");
     nav.querySelectorAll("span")[0].style.color = "white";
-    nav.querySelectorAll("span")[1].style.color = "#177B57";
+    nav.querySelectorAll("span")[1].style.color = "#00B0FF";
     nav.querySelectorAll("span")[2].style.color = "white";
     nav.querySelectorAll("span")[3].style.color = "white";
     nav.querySelectorAll("span")[4].style.color = "white";
@@ -203,7 +321,7 @@ navHighLight03 = function () {
     var nav = document.querySelector("nav");
     nav.querySelectorAll("span")[0].style.color = "white";
     nav.querySelectorAll("span")[1].style.color = "white";
-    nav.querySelectorAll("span")[2].style.color = "#177B57";
+    nav.querySelectorAll("span")[2].style.color = "#00B0FF";
     nav.querySelectorAll("span")[3].style.color = "white";
     nav.querySelectorAll("span")[4].style.color = "white";
 }
@@ -212,7 +330,7 @@ navHighLight04 = function () {
     nav.querySelectorAll("span")[0].style.color = "white";
     nav.querySelectorAll("span")[1].style.color = "white";
     nav.querySelectorAll("span")[2].style.color = "white";
-    nav.querySelectorAll("span")[3].style.color = "#177B57";
+    nav.querySelectorAll("span")[3].style.color = "#00B0FF";
     nav.querySelectorAll("span")[4].style.color = "white";
 }
 navHighLight05 = function () {
@@ -221,7 +339,7 @@ navHighLight05 = function () {
     nav.querySelectorAll("span")[1].style.color = "white";
     nav.querySelectorAll("span")[2].style.color = "white";
     nav.querySelectorAll("span")[3].style.color = "white";
-    nav.querySelectorAll("span")[4].style.color = "#177B57";
+    nav.querySelectorAll("span")[4].style.color = "#00B0FF";
 }
 
 // 每屏高度
